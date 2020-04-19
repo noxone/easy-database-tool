@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edtSettings version="2.0" part="history">
+  <history>
+    <folder name="2008-07-27">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM saal]]></name>
+        <sql><![CDATA[SELECT * FROM saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-07-28">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM saal]]></name>
+        <sql><![CDATA[SELECT * FROM saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-07-29">
+      <query lastrun="">
+        <name><![CDATA[select * from develop.TZ0920]]></name>
+        <sql><![CDATA[select * from develop.TZ0920]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from develop.TZ0880]]></name>
+        <sql><![CDATA[select * from develop.TZ0880]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM TS0550]]></name>
+        <sql><![CDATA[SELECT * FROM TS0550]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from develop.TZ0920 where PART_OF_KEY = 'Y']]></name>
+        <sql><![CDATA[select * from develop.TZ0920 where PART_OF_KEY = 'Y']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM saal]]></name>
+        <sql><![CDATA[SELECT * FROM saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM film]]></name>
+        <sql><![CDATA[SELECT * FROM film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-07-30">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter where mitarbeiter_id = 1]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter where mitarbeiter_id = 1]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-07-31">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM saal]]></name>
+        <sql><![CDATA[SELECT * FROM saal]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-01">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM altersfreigabe]]></name>
+        <sql><![CDATA[SELECT * FROM altersfreigabe]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM filmklasse]]></name>
+        <sql><![CDATA[SELECT * FROM filmklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM reservierung_hat_zuschlag]]></name>
+        <sql><![CDATA[SELECT * FROM reservierung_hat_zuschlag]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue_hat_produkt]]></name>
+        <sql><![CDATA[SELECT * FROM menue_hat_produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM zuschlag]]></name>
+        <sql><![CDATA[SELECT * FROM zuschlag]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM bestellung]]></name>
+        <sql><![CDATA[SELECT * FROM bestellung]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM film]]></name>
+        <sql><![CDATA[SELECT * FROM film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platzklasse]]></name>
+        <sql><![CDATA[SELECT * FROM platzklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM saal]]></name>
+        <sql><![CDATA[SELECT * FROM saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue]]></name>
+        <sql><![CDATA[SELECT * FROM menue]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM vertriebskanal]]></name>
+        <sql><![CDATA[SELECT * FROM vertriebskanal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM karte_hat_zuschlag]]></name>
+        <sql><![CDATA[SELECT * FROM karte_hat_zuschlag]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-02">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+where benutzername like 'test%']]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+where benutzername like 'test%']]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-03">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM saal]]></name>
+        <sql><![CDATA[SELECT * FROM saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue_hat_produkt]]></name>
+        <sql><![CDATA[SELECT * FROM menue_hat_produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-05">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM saal]]></name>
+        <sql><![CDATA[SELECT * FROM saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM film]]></name>
+        <sql><![CDATA[SELECT * FROM film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platz]]></name>
+        <sql><![CDATA[SELECT * FROM platz]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-11">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-13">
+      <query lastrun="">
+        <name><![CDATA[SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'kino']]></name>
+        <sql><![CDATA[SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'kino']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;]]></name>
+        <sql><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE COLUMN_NAME ;]]></name>
+        <sql><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE COLUMN_NAME ;]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'COLUMN_NAME' ;]]></name>
+        <sql><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'COLUMN_NAME' ;]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;]]></name>
+        <sql><![CDATA[SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue]]></name>
+        <sql><![CDATA[SELECT * FROM menue]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;]]></name>
+        <sql><![CDATA[SELECT * FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-18">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-21">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-22">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM filmklasse]]></name>
+        <sql><![CDATA[SELECT * FROM filmklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM reservierung]]></name>
+        <sql><![CDATA[SELECT * FROM reservierung]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, kunde]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM tarif]]></name>
+        <sql><![CDATA[SELECT * FROM tarif]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM tarif_view]]></name>
+        <sql><![CDATA[SELECT * FROM tarif_view]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue_hat_produkt]]></name>
+        <sql><![CDATA[SELECT * FROM menue_hat_produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platz]]></name>
+        <sql><![CDATA[SELECT * FROM platz]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-23">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM tarif_view]]></name>
+        <sql><![CDATA[SELECT * FROM tarif_view]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, kunde]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from mitter]]></name>
+        <sql><![CDATA[select * from mitter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[create view miter as select * from mitarbeiter]]></name>
+        <sql><![CDATA[create view miter as select * from mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[drop view miter]]></name>
+        <sql><![CDATA[drop view miter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-24">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, kunde]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[create view miter as select * from mitarbeiter]]></name>
+        <sql><![CDATA[create view miter as select * from mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[drop view miter]]></name>
+        <sql><![CDATA[drop view miter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+where benutzername like 'test%']]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+where benutzername like 'test%']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from mitarbeiter kunde]]></name>
+        <sql><![CDATA[select * from mitarbeiter kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from mitarbeiter, kunde, produkt, saal]]></name>
+        <sql><![CDATA[select * from mitarbeiter, kunde, produkt, saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from  saal]]></name>
+        <sql><![CDATA[select * from  saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM altersfreigabe
+-- where]]></name>
+        <sql><![CDATA[SELECT * FROM altersfreigabe
+-- where]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM altersfreigabe
+where beschreibung like '%0']]></name>
+        <sql><![CDATA[SELECT * FROM altersfreigabe
+where beschreibung like '%0']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM altersfreigabe]]></name>
+        <sql><![CDATA[SELECT * FROM altersfreigabe]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-28">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM spruch]]></name>
+        <sql><![CDATA[SELECT * FROM spruch]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM admin]]></name>
+        <sql><![CDATA[SELECT * FROM admin]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM news]]></name>
+        <sql><![CDATA[SELECT * FROM news]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-08-31">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM admin]]></name>
+        <sql><![CDATA[SELECT * FROM admin]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from miter]]></name>
+        <sql><![CDATA[select * from miter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[create view miter as SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[create view miter as SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[drop view miter]]></name>
+        <sql><![CDATA[drop view miter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from  mitarbeiter, saal]]></name>
+        <sql><![CDATA[select * from  mitarbeiter, saal]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-09-19">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-10-07">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM bestellung_hat_produkt]]></name>
+        <sql><![CDATA[SELECT * FROM bestellung_hat_produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM film]]></name>
+        <sql><![CDATA[SELECT * FROM film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM produkt]]></name>
+        <sql><![CDATA[SELECT * FROM produkt]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-10-08">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT mitarbeiter_id, benutzername, passwort, rechte
+FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT mitarbeiter_id, benutzername, passwort, rechte
+FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT mitarbeiter_id, benutzername, fk_vertriebskanal_id
+FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT mitarbeiter_id, benutzername, fk_vertriebskanal_id
+FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT mitarbeiter_id, benutzername, passwort, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='olaf']]></name>
+        <sql><![CDATA[SELECT mitarbeiter_id, benutzername, passwort, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='olaf']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='olaf']]></name>
+        <sql><![CDATA[SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='olaf']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT kunde_id, benutzername, passwort, `name`, vorname, adresse, geburtstag, email, newsletter
+FROM kunde
+WHERE
+     vorname ='olaf'
+ AND email like '%web.de'
+ORDER BY
+     benutzername Asc,
+     adresse Desc,
+     name Asc]]></name>
+        <sql><![CDATA[SELECT kunde_id, benutzername, passwort, `name`, vorname, adresse, geburtstag, email, newsletter
+FROM kunde
+WHERE
+     vorname ='olaf'
+ AND email like '%web.de'
+ORDER BY
+     benutzername Asc,
+     adresse Desc,
+     name Asc]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-10-15">
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM kunde]]></name>
+        <sql><![CDATA[SELECT *
+FROM kunde]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-10-17">
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM kunde]]></name>
+        <sql><![CDATA[SELECT *
+FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM kunde, karte, saal, produkt]]></name>
+        <sql><![CDATA[SELECT *
+FROM kunde, karte, saal, produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM kunde, mitarbeiter]]></name>
+        <sql><![CDATA[SELECT *
+FROM kunde, mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM film]]></name>
+        <sql><![CDATA[SELECT *
+FROM film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM kunde, mitarbeiter, film]]></name>
+        <sql><![CDATA[SELECT *
+FROM kunde, mitarbeiter, film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM karte]]></name>
+        <sql><![CDATA[SELECT *
+FROM karte]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM kunde, mitarbeiter, film, saal]]></name>
+        <sql><![CDATA[SELECT *
+FROM kunde, mitarbeiter, film, saal]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM platz]]></name>
+        <sql><![CDATA[SELECT *
+FROM platz]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM altersfreigabe]]></name>
+        <sql><![CDATA[SELECT *
+FROM altersfreigabe]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM reservierung_hat_zuschlag]]></name>
+        <sql><![CDATA[SELECT *
+FROM reservierung_hat_zuschlag]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT beschreibung, mindestalter
+FROM altersfreigabe]]></name>
+        <sql><![CDATA[SELECT beschreibung, mindestalter
+FROM altersfreigabe]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT beschreibung, mindestalter as 'sdf'
+FROM altersfreigabe]]></name>
+        <sql><![CDATA[SELECT beschreibung, mindestalter as 'sdf'
+FROM altersfreigabe]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghghnjf'
+FROM altersfreigabe]]></name>
+        <sql><![CDATA[SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghghnjf'
+FROM altersfreigabe]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghxgnbghnfhysrthghmjxfgbnghmhgfgbnmgxgghnjf'
+FROM altersfreigabe]]></name>
+        <sql><![CDATA[SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghxgnbghnfhysrthghmjxfgbnghmhgfgbnmgxgghnjf'
+FROM altersfreigabe]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM filmklasse]]></name>
+        <sql><![CDATA[SELECT *
+FROM filmklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM saal]]></name>
+        <sql><![CDATA[SELECT *
+FROM saal]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-10-22">
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT *
+FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-10-25">
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT *
+FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-10-31">
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT *
+FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM platz]]></name>
+        <sql><![CDATA[SELECT *
+FROM platz]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-03">
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT *
+FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-04">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue]]></name>
+        <sql><![CDATA[SELECT * FROM menue]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM bla]]></name>
+        <sql><![CDATA[SELECT * FROM bla]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM film]]></name>
+        <sql><![CDATA[SELECT * FROM film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM filmklasse
+WHERE
+     filmklasse_id =10]]></name>
+        <sql><![CDATA[SELECT *
+FROM filmklasse
+WHERE
+     filmklasse_id =10]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM filmklasse]]></name>
+        <sql><![CDATA[SELECT *
+FROM filmklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM filmklasse]]></name>
+        <sql><![CDATA[SELECT *
+FROM filmklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platzklasse]]></name>
+        <sql><![CDATA[SELECT * FROM platzklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername = '']]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername = '']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+GROUP BY passwort]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+GROUP BY passwort]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-05">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgs fgsdfg sdfgh sdf gsdfgdsfgsdfg' FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgs fgsdfg sdfgh sdf gsdfgdsfgsdfg' FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgsfgsdfgsdfghsdfgsdfgdsfgsdfg' FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgsfgsdfgsdfghsdfgsdfgdsfgsdfg' FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-12">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-17">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platz]]></name>
+        <sql><![CDATA[SELECT * FROM platz]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[-- blub
+SELECT * FROM platz]]></name>
+        <sql><![CDATA[-- blub
+SELECT * FROM platz]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-18">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde, karte, mitarbeiter, film]]></name>
+        <sql><![CDATA[SELECT * FROM kunde, karte, mitarbeiter, film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue_hat_produkt]]></name>
+        <sql><![CDATA[SELECT * FROM menue_hat_produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platz]]></name>
+        <sql><![CDATA[SELECT * FROM platz]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-19">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter ghzio]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter ghzio]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-20">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platz]]></name>
+        <sql><![CDATA[SELECT * FROM platz]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select 654]]></name>
+        <sql><![CDATA[select 654]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue]]></name>
+        <sql><![CDATA[SELECT * FROM menue]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM vorstellung]]></name>
+        <sql><![CDATA[SELECT * FROM vorstellung]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM film]]></name>
+        <sql><![CDATA[SELECT * FROM film]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM bestellung]]></name>
+        <sql><![CDATA[SELECT * FROM bestellung]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT kunde_id FROM kunde]]></name>
+        <sql><![CDATA[SELECT kunde_id FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT kunde_id, benutzername as 'sdgdsghsfhdghsfghdghdghsdfgdjdfsfhzherejtzjd' FROM kunde]]></name>
+        <sql><![CDATA[SELECT kunde_id, benutzername as 'sdgdsghsfhdghsfghdghdghsdfgdjdfsfhzherejtzjd' FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM karte]]></name>
+        <sql><![CDATA[SELECT * FROM karte]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT benutzername as 'kjsndfsjndfskdjnf skjdfn skdjf nskdjfnskdj nfskjdfn skjdfnskjd nfksjdfn skjdf' FROM kunde]]></name>
+        <sql><![CDATA[SELECT benutzername as 'kjsndfsjndfskdjnf skjdfn skdjf nskdjfnskdj nfskjdfn skjdfnskjd nfksjdfn skjdf' FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT kunde_id as 'sdfhjbsdifsbnd sdfjnsk fjnskdf njsdf dsf ' FROM kunde]]></name>
+        <sql><![CDATA[SELECT kunde_id as 'sdfhjbsdifsbnd sdfjnsk fjnskdf njsdf dsf ' FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM produkt]]></name>
+        <sql><![CDATA[SELECT * FROM produkt]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT *
+FROM mitarbeiter
+ORDER BY
+     mitarbeiter_id Asc,
+     rechte Desc]]></name>
+        <sql><![CDATA[SELECT *
+FROM mitarbeiter
+ORDER BY
+     mitarbeiter_id Asc,
+     rechte Desc]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername = 'uhl']]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername = 'uhl']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'uhl']]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'uhl']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi%']]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi%']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi']]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi']]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-21">
+      <query lastrun="">
+        <name><![CDATA[create view best as SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte` FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s WHERE (b.`fk_Platz_id` = p.`Platz_id` AND b.`fk_Vorstellung_id` = v.`Vorstellung_id` AND v.`fk_film_id` = f.`film_id` AND v.`fk_Saal_id` = s.`Saal_id`) OR (b.`fk_Vorstellung_id` IS NULL AND b.`fk_Platz_id` IS NULL)]]></name>
+        <sql><![CDATA[create view best as SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte` FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s WHERE (b.`fk_Platz_id` = p.`Platz_id` AND b.`fk_Vorstellung_id` = v.`Vorstellung_id` AND v.`fk_film_id` = f.`film_id` AND v.`fk_Saal_id` = s.`Saal_id`) OR (b.`fk_Vorstellung_id` IS NULL AND b.`fk_Platz_id` IS NULL)]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[select * from best]]></name>
+        <sql><![CDATA[select * from best]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[drop view best]]></name>
+        <sql><![CDATA[drop view best]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (
+           b.`fk_Vorstellung_id` IS NULL
+       AND b.`fk_Platz_id` IS NULL
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (
+           b.`fk_Vorstellung_id` IS NULL
+       AND b.`fk_Platz_id` IS NULL
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+--      OR
+--      (    b.`fk_Platz_id` IS NULL
+--       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+--      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+--      OR
+--      (    b.`fk_Platz_id` IS NULL
+--       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+--      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) > 0]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) > 0]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) > 0]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) > 0]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, Count(p.`reihe`) as 'hasNull'
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`]]></name>
+        <sql><![CDATA[SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, Count(p.`reihe`) as 'hasNull'
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-22">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-23">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter
+ORDER BY benutzername ASC,
+         passwort DESC,
+         mitarbeiter_id ASC,
+         rechte DESC,
+         fk_vertriebskanal_id ASC]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter
+ORDER BY benutzername ASC,
+         passwort DESC,
+         mitarbeiter_id ASC,
+         rechte DESC,
+         fk_vertriebskanal_id ASC]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-24">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-25">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM filmklasse]]></name>
+        <sql><![CDATA[SELECT * FROM filmklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue]]></name>
+        <sql><![CDATA[SELECT * FROM menue]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM menue
+WHERE name = 'Volles Programm']]></name>
+        <sql><![CDATA[SELECT * FROM menue
+WHERE name = 'Volles Programm']]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platzklasse]]></name>
+        <sql><![CDATA[SELECT * FROM platzklasse]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM platzklasse
+WHERE platzklasse_id = 4]]></name>
+        <sql><![CDATA[SELECT * FROM platzklasse
+WHERE platzklasse_id = 4]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-26">
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+-- GROUP BY v.`vorstellung_id`]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+-- GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`
+HAVING (COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`)) = 14]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`
+HAVING (COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`)) = 14]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM vorstellung]]></name>
+        <sql><![CDATA[SELECT * FROM vorstellung]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+    </folder>
+    <folder name="2008-11-27">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></name>
+        <sql><![CDATA[SELECT * FROM mitarbeiter, saal, kunde, film, produkt]]></sql>
+      </query>
+    </folder>
+  </history>
+</edtSettings>
+

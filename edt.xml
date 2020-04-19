@@ -1,0 +1,2618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edtSettings version="1.0">
+  <databaseConfig>
+    <name>test online</name>
+    <jdbcPrefix>mysql</jdbcPrefix>
+    <server>localhost</server>
+    <port>3306</port>
+    <database>abc</database>
+    <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+    <tablesQuery tablename="TABLE_NAME">SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'abc'</tablesQuery>
+    <columnsQuery readColumnsAtStart="true">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'abc' AND `TABLE_NAME` LIKE ? ;</columnsQuery>
+    <keyColumnsQuery columnname="COLUMN_NAME">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `COLUMN_KEY` LIKE 'PRI' AND `TABLE_SCHEMA` LIKE 'abc' AND `TABLE_NAME` LIKE ? ;</keyColumnsQuery>
+  </databaseConfig>
+  <databaseConfig>
+    <name>sms.db</name>
+    <jdbcPrefix>sqlite</jdbcPrefix>
+    <server />
+    <port>0</port>
+    <database>C:/Users/abc/Desktop/sms/sms.db</database>
+    <driverClassName>SQLite.JDBCDriver</driverClassName>
+    <tablesQuery tablename="tbl_name">select * from sqlite_master where type='table'</tablesQuery>
+    <columnsQuery readColumnsAtStart="true">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'klassentreffen' AND `TABLE_NAME` LIKE ? ;</columnsQuery>
+    <keyColumnsQuery columnname="COLUMN_NAME">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `COLUMN_KEY` LIKE 'PRI' AND `TABLE_SCHEMA` LIKE 'klassentreffen' AND `TABLE_NAME` LIKE ? ;</keyColumnsQuery>
+  </databaseConfig>
+  <databaseConfig>
+    <name>klassentreffen</name>
+    <jdbcPrefix>mysql</jdbcPrefix>
+    <server>localhost</server>
+    <port>3306</port>
+    <database>klassentreffen</database>
+    <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+    <tablesQuery tablename="TABLE_NAME">SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'klassentreffen'</tablesQuery>
+    <columnsQuery readColumnsAtStart="true">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'klassentreffen' AND `TABLE_NAME` LIKE ? ;</columnsQuery>
+    <keyColumnsQuery columnname="COLUMN_NAME">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `COLUMN_KEY` LIKE 'PRI' AND `TABLE_SCHEMA` LIKE 'klassentreffen' AND `TABLE_NAME` LIKE ? ;</keyColumnsQuery>
+  </databaseConfig>
+  <databaseConfig>
+    <name>kino</name>
+    <jdbcPrefix>mysql</jdbcPrefix>
+    <server>localhost</server>
+    <port>3306</port>
+    <database>kino</database>
+    <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+    <tablesQuery tablename="TABLE_NAME">SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'kino'</tablesQuery>
+    <columnsQuery readColumnsAtStart="true">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE ? ;</columnsQuery>
+    <keyColumnsQuery columnname="COLUMN_NAME">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `COLUMN_KEY` LIKE 'PRI' AND `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE ? ;</keyColumnsQuery>
+  </databaseConfig>
+  <databaseConfig>
+    <name>heusi</name>
+    <jdbcPrefix>mysql</jdbcPrefix>
+    <server>localhost</server>
+    <port>3306</port>
+    <database>heusi</database>
+    <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+    <tablesQuery tablename="TABLE_NAME">SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'heusi'</tablesQuery>
+    <columnsQuery readColumnsAtStart="true">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'heusi' AND `TABLE_NAME` LIKE ? ;</columnsQuery>
+    <keyColumnsQuery columnname="COLUMN_NAME">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `COLUMN_KEY` LIKE 'PRI' AND `TABLE_SCHEMA` LIKE 'heusi' AND `TABLE_NAME` LIKE ? ;</keyColumnsQuery>
+  </databaseConfig>
+  <databaseConfig>
+    <name>The Llama</name>
+    <jdbcPrefix>mysql</jdbcPrefix>
+    <server>localhost</server>
+    <port>3306</port>
+    <database>thellama</database>
+    <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+    <tablesQuery tablename="TABLE_NAME">SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'thellama'</tablesQuery>
+    <columnsQuery readColumnsAtStart="true">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'thellama' AND `TABLE_NAME` LIKE ? ;</columnsQuery>
+    <keyColumnsQuery columnname="COLUMN_NAME">SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `COLUMN_KEY` LIKE 'PRI' AND `TABLE_SCHEMA` LIKE 'thellama' AND `TABLE_NAME` LIKE ? ;</keyColumnsQuery>
+  </databaseConfig>
+  <options>
+    <option name="resultTableFont">standard</option>
+    <option name="treeTableDoubleclick">generateCode</option>
+    <option name="resultTableRowHeight">18</option>
+    <option name="saveHistory">true</option>
+  </options>
+  <favourites>
+    <folder name="DB">
+      <query lastrun="">
+        <name>Alle Tabellen</name>
+        <sql>select * from develop.TZ0880</sql>
+      </query>
+      <query lastrun="">
+        <name>Alle Spalten</name>
+        <sql>select * from develop.TZ0920</sql>
+      </query>
+      <query lastrun="">
+        <name>Alle Key-Spalten</name>
+        <sql>select * from develop.TZ0920 where PART_OF_KEY = 'Y'</sql>
+      </query>
+    </folder>
+    <folder name="demo">
+      <query lastrun="">
+        <name>abc</name>
+        <sql>SELECT * FROM altersfreigabe
+where beschreibung like '%0'</sql>
+      </query>
+    </folder>
+    <folder name="kino">
+      <query lastrun="">
+        <name>(freie) Karten</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+    </folder>
+    <folder name="mecke" />
+    <folder name="sonst">
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+    </folder>
+    <folder name="web" />
+    <folder name="zoll" />
+  </favourites>
+  <history>
+    <folder name="2008-07-27">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM saal</name>
+        <sql>SELECT * FROM saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+    </folder>
+    <folder name="2008-07-28">
+      <query lastrun="">
+        <name>SELECT * FROM saal</name>
+        <sql>SELECT * FROM saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-07-29">
+      <query lastrun="">
+        <name>select * from develop.TZ0920</name>
+        <sql>select * from develop.TZ0920</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from develop.TZ0880</name>
+        <sql>select * from develop.TZ0880</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM TS0550</name>
+        <sql>SELECT * FROM TS0550</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from develop.TZ0920 where PART_OF_KEY = 'Y'</name>
+        <sql>select * from develop.TZ0920 where PART_OF_KEY = 'Y'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM saal</name>
+        <sql>SELECT * FROM saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+    </folder>
+    <folder name="2008-07-30">
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter where mitarbeiter_id = 1</name>
+        <sql>SELECT * FROM mitarbeiter where mitarbeiter_id = 1</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+    </folder>
+    <folder name="2008-07-31">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM saal</name>
+        <sql>SELECT * FROM saal</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-01">
+      <query lastrun="">
+        <name>SELECT * FROM altersfreigabe</name>
+        <sql>SELECT * FROM altersfreigabe</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM filmklasse</name>
+        <sql>SELECT * FROM filmklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM reservierung_hat_zuschlag</name>
+        <sql>SELECT * FROM reservierung_hat_zuschlag</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue_hat_produkt</name>
+        <sql>SELECT * FROM menue_hat_produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM zuschlag</name>
+        <sql>SELECT * FROM zuschlag</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM bestellung</name>
+        <sql>SELECT * FROM bestellung</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platzklasse</name>
+        <sql>SELECT * FROM platzklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM saal</name>
+        <sql>SELECT * FROM saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue</name>
+        <sql>SELECT * FROM menue</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM vertriebskanal</name>
+        <sql>SELECT * FROM vertriebskanal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM karte_hat_zuschlag</name>
+        <sql>SELECT * FROM karte_hat_zuschlag</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-02">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+where benutzername like 'test%'</name>
+        <sql>SELECT * FROM mitarbeiter
+where benutzername like 'test%'</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-03">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM saal</name>
+        <sql>SELECT * FROM saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue_hat_produkt</name>
+        <sql>SELECT * FROM menue_hat_produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-05">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM saal</name>
+        <sql>SELECT * FROM saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platz</name>
+        <sql>SELECT * FROM platz</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-11">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-13">
+      <query lastrun="">
+        <name>SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'kino'</name>
+        <sql>SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` LIKE 'kino'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;</name>
+        <sql>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE COLUMN_NAME ;</name>
+        <sql>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE COLUMN_NAME ;</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'COLUMN_NAME' ;</name>
+        <sql>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'COLUMN_NAME' ;</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;</name>
+        <sql>SELECT `COLUMN_NAME` FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue</name>
+        <sql>SELECT * FROM menue</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;</name>
+        <sql>SELECT * FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` LIKE 'kino' AND `TABLE_NAME` LIKE 'kunde' ;</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-18">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-21">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-22">
+      <query lastrun="">
+        <name>SELECT * FROM filmklasse</name>
+        <sql>SELECT * FROM filmklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM reservierung</name>
+        <sql>SELECT * FROM reservierung</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, kunde</name>
+        <sql>SELECT * FROM mitarbeiter, kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM tarif</name>
+        <sql>SELECT * FROM tarif</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM tarif_view</name>
+        <sql>SELECT * FROM tarif_view</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue_hat_produkt</name>
+        <sql>SELECT * FROM menue_hat_produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platz</name>
+        <sql>SELECT * FROM platz</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-23">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM tarif_view</name>
+        <sql>SELECT * FROM tarif_view</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, kunde</name>
+        <sql>SELECT * FROM mitarbeiter, kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from mitter</name>
+        <sql>select * from mitter</sql>
+      </query>
+      <query lastrun="">
+        <name>create view miter as select * from mitarbeiter</name>
+        <sql>create view miter as select * from mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>drop view miter</name>
+        <sql>drop view miter</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-24">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, kunde</name>
+        <sql>SELECT * FROM mitarbeiter, kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>create view miter as select * from mitarbeiter</name>
+        <sql>create view miter as select * from mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>drop view miter</name>
+        <sql>drop view miter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+where benutzername like 'test%'</name>
+        <sql>SELECT * FROM mitarbeiter
+where benutzername like 'test%'</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from mitarbeiter kunde</name>
+        <sql>select * from mitarbeiter kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from mitarbeiter, kunde, produkt, saal</name>
+        <sql>select * from mitarbeiter, kunde, produkt, saal</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from  saal</name>
+        <sql>select * from  saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM altersfreigabe
+-- where</name>
+        <sql>SELECT * FROM altersfreigabe
+-- where</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM altersfreigabe
+where beschreibung like '%0'</name>
+        <sql>SELECT * FROM altersfreigabe
+where beschreibung like '%0'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM altersfreigabe</name>
+        <sql>SELECT * FROM altersfreigabe</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-28">
+      <query lastrun="">
+        <name>SELECT * FROM spruch</name>
+        <sql>SELECT * FROM spruch</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM admin</name>
+        <sql>SELECT * FROM admin</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM news</name>
+        <sql>SELECT * FROM news</sql>
+      </query>
+    </folder>
+    <folder name="2008-08-31">
+      <query lastrun="">
+        <name>SELECT * FROM admin</name>
+        <sql>SELECT * FROM admin</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from miter</name>
+        <sql>select * from miter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>create view miter as SELECT * FROM mitarbeiter</name>
+        <sql>create view miter as SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>drop view miter</name>
+        <sql>drop view miter</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from  mitarbeiter, saal</name>
+        <sql>select * from  mitarbeiter, saal</sql>
+      </query>
+    </folder>
+    <folder name="2008-09-19">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-10-07">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM bestellung_hat_produkt</name>
+        <sql>SELECT * FROM bestellung_hat_produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM produkt</name>
+        <sql>SELECT * FROM produkt</sql>
+      </query>
+    </folder>
+    <folder name="2008-10-08">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT mitarbeiter_id, benutzername, passwort, rechte
+FROM mitarbeiter</name>
+        <sql>SELECT mitarbeiter_id, benutzername, passwort, rechte
+FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT mitarbeiter_id, benutzername, fk_vertriebskanal_id
+FROM mitarbeiter</name>
+        <sql>SELECT mitarbeiter_id, benutzername, fk_vertriebskanal_id
+FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter</name>
+        <sql>SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT mitarbeiter_id, benutzername, passwort, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='abc'</name>
+        <sql>SELECT mitarbeiter_id, benutzername, passwort, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='abc'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='abc'</name>
+        <sql>SELECT mitarbeiter_id, benutzername, rechte, fk_vertriebskanal_id
+FROM mitarbeiter
+WHERE
+     benutzername ='abc'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT kunde_id, benutzername, passwort, `name`, vorname, adresse, geburtstag, email, newsletter
+FROM kunde
+WHERE
+     vorname ='abc'
+ AND email like '%web.de'
+ORDER BY
+     benutzername Asc,
+     adresse Desc,
+     name Asc</name>
+        <sql>SELECT kunde_id, benutzername, passwort, `name`, vorname, adresse, geburtstag, email, newsletter
+FROM kunde
+WHERE
+     vorname ='abc'
+ AND email like '%web.de'
+ORDER BY
+     benutzername Asc,
+     adresse Desc,
+     name Asc</sql>
+      </query>
+    </folder>
+    <folder name="2008-10-15">
+      <query lastrun="">
+        <name>SELECT *
+FROM kunde</name>
+        <sql>SELECT *
+FROM kunde</sql>
+      </query>
+    </folder>
+    <folder name="2008-10-17">
+      <query lastrun="">
+        <name>SELECT *
+FROM kunde</name>
+        <sql>SELECT *
+FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM kunde, karte, saal, produkt</name>
+        <sql>SELECT *
+FROM kunde, karte, saal, produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM kunde, mitarbeiter</name>
+        <sql>SELECT *
+FROM kunde, mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM film</name>
+        <sql>SELECT *
+FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM kunde, mitarbeiter, film</name>
+        <sql>SELECT *
+FROM kunde, mitarbeiter, film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM karte</name>
+        <sql>SELECT *
+FROM karte</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM kunde, mitarbeiter, film, saal</name>
+        <sql>SELECT *
+FROM kunde, mitarbeiter, film, saal</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM platz</name>
+        <sql>SELECT *
+FROM platz</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM altersfreigabe</name>
+        <sql>SELECT *
+FROM altersfreigabe</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM reservierung_hat_zuschlag</name>
+        <sql>SELECT *
+FROM reservierung_hat_zuschlag</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT beschreibung, mindestalter
+FROM altersfreigabe</name>
+        <sql>SELECT beschreibung, mindestalter
+FROM altersfreigabe</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT beschreibung, mindestalter as 'sdf'
+FROM altersfreigabe</name>
+        <sql>SELECT beschreibung, mindestalter as 'sdf'
+FROM altersfreigabe</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghghnjf'
+FROM altersfreigabe</name>
+        <sql>SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghghnjf'
+FROM altersfreigabe</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghxgnbghnfhysrthghmjxfgbnghmhgfgbnmgxgghnjf'
+FROM altersfreigabe</name>
+        <sql>SELECT beschreibung, mindestalter as 'sddfgbdfgbghndghnfsdfnhjfgfgjmfdfghnfghnxfghxgnbghnfhysrthghmjxfgbnghmhgfgbnmgxgghnjf'
+FROM altersfreigabe</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM filmklasse</name>
+        <sql>SELECT *
+FROM filmklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM saal</name>
+        <sql>SELECT *
+FROM saal</sql>
+      </query>
+    </folder>
+    <folder name="2008-10-22">
+      <query lastrun="">
+        <name>SELECT *
+FROM mitarbeiter</name>
+        <sql>SELECT *
+FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-10-25">
+      <query lastrun="">
+        <name>SELECT *
+FROM mitarbeiter</name>
+        <sql>SELECT *
+FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-10-31">
+      <query lastrun="">
+        <name>SELECT *
+FROM mitarbeiter</name>
+        <sql>SELECT *
+FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM platz</name>
+        <sql>SELECT *
+FROM platz</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-03">
+      <query lastrun="">
+        <name>SELECT *
+FROM mitarbeiter</name>
+        <sql>SELECT *
+FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-04">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue</name>
+        <sql>SELECT * FROM menue</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM bla</name>
+        <sql>SELECT * FROM bla</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM filmklasse
+WHERE
+     filmklasse_id =10</name>
+        <sql>SELECT *
+FROM filmklasse
+WHERE
+     filmklasse_id =10</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM filmklasse</name>
+        <sql>SELECT *
+FROM filmklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM filmklasse</name>
+        <sql>SELECT *
+FROM filmklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platzklasse</name>
+        <sql>SELECT * FROM platzklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+WHERE benutzername = ''</name>
+        <sql>SELECT * FROM mitarbeiter
+WHERE benutzername = ''</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+GROUP BY passwort</name>
+        <sql>SELECT * FROM mitarbeiter
+GROUP BY passwort</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-05">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgs fgsdfg sdfgh sdf gsdfgdsfgsdfg' FROM mitarbeiter</name>
+        <sql>SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgs fgsdfg sdfgh sdf gsdfgdsfgsdfg' FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgsfgsdfgsdfghsdfgsdfgdsfgsdfg' FROM mitarbeiter</name>
+        <sql>SELECT mitarbeiter_id, benutzername, passwort as 'sdfdfgsdfghsdfgsfdgsfgsdfgsdfghsdfgsdfgdsfgsdfg' FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-12">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-17">
+      <query lastrun="">
+        <name>SELECT * FROM platz</name>
+        <sql>SELECT * FROM platz</sql>
+      </query>
+      <query lastrun="">
+        <name>-- blub
+SELECT * FROM platz</name>
+        <sql>-- blub
+SELECT * FROM platz</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-18">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde, karte, mitarbeiter, film</name>
+        <sql>SELECT * FROM kunde, karte, mitarbeiter, film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue_hat_produkt</name>
+        <sql>SELECT * FROM menue_hat_produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platz</name>
+        <sql>SELECT * FROM platz</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-19">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter ghzio</name>
+        <sql>SELECT * FROM mitarbeiter ghzio</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-20">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platz</name>
+        <sql>SELECT * FROM platz</sql>
+      </query>
+      <query lastrun="">
+        <name>select 654</name>
+        <sql>select 654</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue</name>
+        <sql>SELECT * FROM menue</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM vorstellung</name>
+        <sql>SELECT * FROM vorstellung</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM bestellung</name>
+        <sql>SELECT * FROM bestellung</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT kunde_id FROM kunde</name>
+        <sql>SELECT kunde_id FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT kunde_id, benutzername as 'sdgdsghsfhdghsfghdghdghsdfgdjdfsfhzherejtzjd' FROM kunde</name>
+        <sql>SELECT kunde_id, benutzername as 'sdgdsghsfhdghsfghdghdghsdfgdjdfsfhzherejtzjd' FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM karte</name>
+        <sql>SELECT * FROM karte</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT benutzername as 'kjsndfsjndfskdjnf skjdfn skdjf nskdjfnskdj nfskjdfn skjdfnskjd nfksjdfn skjdf' FROM kunde</name>
+        <sql>SELECT benutzername as 'kjsndfsjndfskdjnf skjdfn skdjf nskdjfnskdj nfskjdfn skjdfnskjd nfksjdfn skjdf' FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT kunde_id as 'sdfhjbsdifsbnd sdfjnsk fjnskdf njsdf dsf ' FROM kunde</name>
+        <sql>SELECT kunde_id as 'sdfhjbsdifsbnd sdfjnsk fjnskdf njsdf dsf ' FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM produkt</name>
+        <sql>SELECT * FROM produkt</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT *
+FROM mitarbeiter
+ORDER BY
+     mitarbeiter_id Asc,
+     rechte Desc</name>
+        <sql>SELECT *
+FROM mitarbeiter
+ORDER BY
+     mitarbeiter_id Asc,
+     rechte Desc</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+WHERE benutzername = 'uhl'</name>
+        <sql>SELECT * FROM mitarbeiter
+WHERE benutzername = 'uhl'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'uhl'</name>
+        <sql>SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'uhl'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi%'</name>
+        <sql>SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi%'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi'</name>
+        <sql>SELECT * FROM mitarbeiter
+WHERE benutzername LIKE 'richi'</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-21">
+      <query lastrun="">
+        <name>create view best as SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte` FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s WHERE (b.`fk_Platz_id` = p.`Platz_id` AND b.`fk_Vorstellung_id` = v.`Vorstellung_id` AND v.`fk_film_id` = f.`film_id` AND v.`fk_Saal_id` = s.`Saal_id`) OR (b.`fk_Vorstellung_id` IS NULL AND b.`fk_Platz_id` IS NULL)</name>
+        <sql>create view best as SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte` FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s WHERE (b.`fk_Platz_id` = p.`Platz_id` AND b.`fk_Vorstellung_id` = v.`Vorstellung_id` AND v.`fk_film_id` = f.`film_id` AND v.`fk_Saal_id` = s.`Saal_id`) OR (b.`fk_Vorstellung_id` IS NULL AND b.`fk_Platz_id` IS NULL)</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from best</name>
+        <sql>select * from best</sql>
+      </query>
+      <query lastrun="">
+        <name>drop view best</name>
+        <sql>drop view best</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (
+           b.`fk_Vorstellung_id` IS NULL
+       AND b.`fk_Platz_id` IS NULL
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (
+           b.`fk_Vorstellung_id` IS NULL
+       AND b.`fk_Platz_id` IS NULL
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+--      OR
+--      (    b.`fk_Platz_id` IS NULL
+--       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+--      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+--      OR
+--      (    b.`fk_Platz_id` IS NULL
+--       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+--      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+--       AND v.`fk_film_id` = f.`film_id`
+--       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+       AND v.`fk_film_id` = -1
+       AND v.`fk_Saal_id` = -1
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) &gt; 0</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) &gt; 0</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) &gt; 0</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`
+HAVING COUNT(p.`reihe`) &gt; 0</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, COUNT(p.`reihe`)
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, Count(p.`reihe`) as 'hasNull'
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`</name>
+        <sql>SELECT b.`bestellung_id`,b.`zeitpunkt`, v.`termin`, s.`bezeichnung`, f.`name`, p.`reihe`, p.`spalte`, Count(p.`reihe`) as 'hasNull'
+FROM `bestellung` b, `vorstellung` v, `platz` p, `film` f, `saal` s
+WHERE (    b.`fk_Platz_id` = p.`Platz_id`
+       AND b.`fk_Vorstellung_id` = v.`Vorstellung_id`
+       AND v.`fk_film_id` = f.`film_id`
+       AND v.`fk_Saal_id` = s.`Saal_id`
+      )
+      OR
+      (    b.`fk_Platz_id` IS NULL
+       AND b.`fk_Vorstellung_id` IS NULL
+      )
+GROUP BY b.`bestellung_id`</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-22">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-23">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter
+ORDER BY benutzername ASC,
+         passwort DESC,
+         mitarbeiter_id ASC,
+         rechte DESC,
+         fk_vertriebskanal_id ASC</name>
+        <sql>SELECT * FROM mitarbeiter
+ORDER BY benutzername ASC,
+         passwort DESC,
+         mitarbeiter_id ASC,
+         rechte DESC,
+         fk_vertriebskanal_id ASC</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-24">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-25">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM filmklasse</name>
+        <sql>SELECT * FROM filmklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue</name>
+        <sql>SELECT * FROM menue</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue
+WHERE name = 'Volles Programm'</name>
+        <sql>SELECT * FROM menue
+WHERE name = 'Volles Programm'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platzklasse</name>
+        <sql>SELECT * FROM platzklasse</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM platzklasse
+WHERE platzklasse_id = 4</name>
+        <sql>SELECT * FROM platzklasse
+WHERE platzklasse_id = 4</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-26">
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+-- GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Filmname',
+       COUNT( DISTINCT p.`platz_id`) AS 'Plaetze im Saal',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k1.`karte_id`) AS 'Karten ohne Reservierung',
+       COUNT(DISTINCT k2.`karte_id`) AS 'Karten mit Reservierung'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+-- GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`
+HAVING (COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`)) = 14</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`
+HAVING (COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`)) = 14</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT(DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+--  AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM vorstellung</name>
+        <sql>SELECT * FROM vorstellung</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-27">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</name>
+        <sql>SELECT * FROM mitarbeiter, saal, kunde, film, produkt</sql>
+      </query>
+    </folder>
+    <folder name="2008-11-28">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2008-12-02">
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id` AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id` AND f.`film_id` = 1
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 2
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 2
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 3
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 3
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 4
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 4
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 5
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 5
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 6
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 6
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 7
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 7
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 8
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'vorstellung',  
+v.termin AS 'termin', s.bezeichnung AS 'saal', f.name AS 'film', COUNT(DISTINCT p.`platz_id`) AS 'sitze',
+COUNT(DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'frei', COUNT(DISTINCT k1.`karte_id`) AS 'karten',
+COUNT(DISTINCT r.`reservierung_id`) AS 'reservierungen', COUNT(DISTINCT k2.`karte_id`) AS 'abgeholt'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+RIGHT JOIN (`reservierung` r
+RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL LEFT JOIN `platz` p ON p.`fk_saal_id` = s.`saal_id` WHERE v.`fk_saal_id` = s.`saal_id` AND v.`fk_film_id` = f.`film_id`
+AND f.`film_id` = 8
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+    </folder>
+    <folder name="2008-12-04">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM karte</name>
+        <sql>SELECT * FROM karte</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM bestellung</name>
+        <sql>SELECT * FROM bestellung</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+    </folder>
+    <folder name="2009-01-04">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM kunde</name>
+        <sql>SELECT * FROM kunde</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM menue</name>
+        <sql>SELECT * FROM menue</sql>
+      </query>
+    </folder>
+    <folder name="2009-01-12">
+      <query lastrun="">
+        <name>SELECT * FROM karte</name>
+        <sql>SELECT * FROM karte</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2009-01-13">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter, kunde, menue, film, karte</name>
+        <sql>SELECT * FROM mitarbeiter, kunde, menue, film, karte</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.datum AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.datum AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.datum AS 'Datum',
+       v.uhrzeit AS 'Zeit',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</name>
+        <sql>SELECT v.vorstellung_id AS 'Vorstellung',
+       v.datum AS 'Datum',
+       v.uhrzeit AS 'Zeit',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`</sql>
+      </query>
+    </folder>
+    <folder name="2009-02-19">
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2009-07-13">
+      <query lastrun="">
+        <name>SELECT * FROM useringroup</name>
+        <sql>SELECT * FROM useringroup</sql>
+      </query>
+    </folder>
+    <folder name="2009-07-14">
+      <query lastrun="">
+        <name>SELECT * FROM film</name>
+        <sql>SELECT * FROM film</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM mitarbeiter</name>
+        <sql>SELECT * FROM mitarbeiter</sql>
+      </query>
+    </folder>
+    <folder name="2009-12-21">
+      <query lastrun="">
+        <name>SELECT * FROM abschlussart</name>
+        <sql>SELECT * FROM abschlussart</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM abschlussjahrgang</name>
+        <sql>SELECT * FROM abschlussjahrgang</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM benutzer</name>
+        <sql>SELECT * FROM benutzer</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM anti_brute_force</name>
+        <sql>SELECT * FROM anti_brute_force</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM anti_brute_force
+WHERE username = 's.koers'</name>
+        <sql>SELECT * FROM anti_brute_force
+WHERE username = 's.koers'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM benutzer
+WHERE username = 's.koers'</name>
+        <sql>SELECT * FROM benutzer
+WHERE username = 's.koers'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT benutzer_id, fk_abschlussjahrgang_id, username, password, security_hash, email, firstname, lastname, nickname, sex, last_change, last_action, last_ip, created_on, active, registered, birthday, birthday_visibility
+FROM benutzer
+ORDER BY
+     username Asc</name>
+        <sql>SELECT benutzer_id, fk_abschlussjahrgang_id, username, password, security_hash, email, firstname, lastname, nickname, sex, last_change, last_action, last_ip, created_on, active, registered, birthday, birthday_visibility
+FROM benutzer
+ORDER BY
+     username Asc</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT benutzer_id, fk_abschlussjahrgang_id, username, password, security_hash, email, firstname, lastname, nickname, sex, last_change, last_action, last_ip, created_on, active, registered, birthday, birthday_visibility
+FROM benutzer
+ORDER BY
+     lastname Asc,
+     firstname Asc</name>
+        <sql>SELECT benutzer_id, fk_abschlussjahrgang_id, username, password, security_hash, email, firstname, lastname, nickname, sex, last_change, last_action, last_ip, created_on, active, registered, birthday, birthday_visibility
+FROM benutzer
+ORDER BY
+     lastname Asc,
+     firstname Asc</sql>
+      </query>
+    </folder>
+    <folder name="2010-03-12">
+      <query lastrun="">
+        <name>SELECT * FROM benutzer</name>
+        <sql>SELECT * FROM benutzer</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM abschlussjahrgang</name>
+        <sql>SELECT * FROM abschlussjahrgang</sql>
+      </query>
+    </folder>
+    <folder name="2010-03-21">
+      <query lastrun="">
+        <name>SELECT * FROM benutzer</name>
+        <sql>SELECT * FROM benutzer</sql>
+      </query>
+    </folder>
+    <folder name="2010-03-28">
+      <query lastrun="">
+        <name>SELECT * FROM benutzer</name>
+        <sql>SELECT * FROM benutzer</sql>
+      </query>
+    </folder>
+    <folder name="2012-10-06">
+      <query lastrun="">
+        <name>select * from sqlite_master</name>
+        <sql>select * from sqlite_master</sql>
+      </query>
+      <query lastrun="">
+        <name>select * from sqlite_master
+where type='table'</name>
+        <sql>select * from sqlite_master
+where type='table'</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM settings</name>
+        <sql>SELECT * FROM settings</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM blacklist</name>
+        <sql>SELECT * FROM blacklist</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM drafts</name>
+        <sql>SELECT * FROM drafts</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM message</name>
+        <sql>SELECT * FROM message</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM irealsms_settings</name>
+        <sql>SELECT * FROM irealsms_settings</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM message_attachment_join</name>
+        <sql>SELECT * FROM message_attachment_join</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM sqlite_stat1</name>
+        <sql>SELECT * FROM sqlite_stat1</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM chat_message_join</name>
+        <sql>SELECT * FROM chat_message_join</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM chat_handle_join</name>
+        <sql>SELECT * FROM chat_handle_join</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM handle</name>
+        <sql>SELECT * FROM handle</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM attachment</name>
+        <sql>SELECT * FROM attachment</sql>
+      </query>
+      <query lastrun="">
+        <name>SELECT * FROM chat</name>
+        <sql>SELECT * FROM chat</sql>
+      </query>
+    </folder>
+    <folder name="2013-07-20">
+      <query lastrun="">
+        <name>SELECT * FROM blub</name>
+        <sql>SELECT * FROM blub</sql>
+      </query>
+    </folder>
+  </history>
+</edtSettings>
+

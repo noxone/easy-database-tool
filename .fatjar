@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Jan 19 12:20:06 CET 2009
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=edt.jar
+manifest.mergeall=true
+manifest.mainclass=org.noxfire.edt.EDT
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|EDT>~org/~olafneumann/
+includes=

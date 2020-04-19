@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EdtHelp version="1">
+	<ReturnCodes>
+		<code>-007</code>
+		<message><![CDATA[STATEMENT CONTAINS THE ILLEGAL CHARACTER character]]></message>
+		<explanation><![CDATA[The specified 'character' is not a valid character in SQL statements.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the syntax and resubmit the statement. Refer to Chapter 2 of DB2 SQL Reference for information about the valid SQL character set.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-010</code>
+		<message><![CDATA[THE STRING CONSTANT BEGINNING string IS NOT TERMINATED]]></message>
+		<explanation><![CDATA[The statement contains a string constant, beginning with 'string', that is not terminated properly.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Examine the statement for missing quotation marks or apostrophes in the indicated string constant.]]></programmersResponse>
+		<sqlState>42603</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-029</code>
+		<message><![CDATA[INTO CLAUSE REQUIRED]]></message>
+		<explanation><![CDATA[SELECT statements embedded in an application program must have an INTO clause to denote where the results of the SELECT are to be placed. Dynamic SELECT statements do not permit the INTO clause.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Add the INTO clause to the SELECT statement and precompile the application program again.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-58</code>
+		<message><![CDATA[An integer expression must be specified on a RETURN statement in an SQL procedure.  The data type of the RETURN statement value in an SQL procedure must be INTEGER.]]></message>
+		<explanation><![CDATA[A RETURN statement is specified in the SQL procedure with a value or expression that is not of the INTEGER data type.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be processed.]]></systemAction>
+		<programmersResponse><![CDATA[Specify a value on the RETURN statement that has a data type of INTEGER.]]></programmersResponse>
+		<sqlState>428F2</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-060</code>
+		<message><![CDATA[INVALID type SPECIFICATION : spec]]></message>
+		<explanation><![CDATA['type' is either LENGTH or SCALE. 'spec' is the specified length or scale. Length or scale must be specified by an unsigned integer constant and the value must be in the range allowed by the data type.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the statement. Refer to Chapter 2 of DB2 SQL Reference for rules for length and scale.]]></programmersResponse>
+		<sqlState>42815</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-079</code>
+		<message><![CDATA[QUALIFIER FOR DECLARED GLOBAL TEMPORARY TABLE table-name MUST BE SESSION, NOT qualifier]]></message>
+		<explanation><![CDATA[The qualifier for a declared temporary table must be SESSION. The DECLARE GLOBAL TEMPORARY TABLE statement defines a new temporary table named table-name with an explicit qualifier of qualifier. Specifying a qualifier other than SESSION is not allowed.]]></explanation>
+		<systemAction><![CDATA[The statement was not executed.]]></systemAction>
+		<programmersResponse><![CDATA[Change the statement in one of the following ways:
+ - Change the qualifier to SESSION.
+ - Remove the qualifier, and let DB2 default it to SESSION.]]></programmersResponse>
+		<sqlState>428EK</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-084</code>
+		<message><![CDATA[UNACCEPTABLE SQL STATEMENT]]></message>
+		<explanation><![CDATA[This SQL statement is unacceptable to DB2. One of the following has occurred:
+ - An attempt has been made to PREPARE or EXECUTE IMMEDIATE an SQL statement that cannot be prepared; refer to the proper SQL statement in DB2 SQL Reference
+ - The embedded SQL statement is not an SQL statement supported by DB2.
+ - The statement referenced an undeclared cursor.
+ - An attempt was made to prepare an ALLOCATE CURSOR statement but the statement identifier is already associated with a declared cursor.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[If the situation involves an SQL statement that cannot be prepared, the problem is in the source of the SQL statement, not the application program.  Thus, no action is necessary unless the source of the SQL statement is the application program itself.
+If the situation involves an SQL statement that is not supported by DB2, remove it from the application program and precompile again.
+If the situation involves an invalid PREPARE of an ALLOCATE CURSOR statement, change the application program to use a statement identifier that is not associated with a declared cursor.]]></programmersResponse>
+		<sqlState>42612</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-096</code>
+		<message><![CDATA[VARIABLE variable-name DOES NOT EXIST OR IS NOT SUPPORTED BY THE SERVER AND A DEFAULT VALUE WAS NOT PROVIDED]]></message>
+		<explanation><![CDATA[The GETVARIABLE function was invoked for variable variable-name. However, a value does not exist for a variable with that name, and a default value was not provided.
+         - If the qualifier is SESSION, a user-defined variable with name variable-name has not been set.
+         - If the qualifier is SYSIBM, the server does not support a built-in session variable with name variable-name.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Change the invocation of the function to specify a default variable for variable-name,or change the name of a variable that does exist.]]></programmersResponse>
+		<sqlState>42704</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-097</code>
+		<message><![CDATA[THE USE OF  LONG VARCHAR OR LONG VARGRAPHIC IS NOT ALLOWED IN THIS CONTEXT]]></message>
+		<explanation><![CDATA[The statement attempted to use the LONG VARCHAR or LONG VARGRAPHIC syntax.  This syntax cannot be used for the following statements:
+ - CAST specification syntax
+ - CREATE DISTINCT TYPE
+ - CREATE FUNCTION
+ - CREATE PROCEDURE
+ - ALTER FUNCTION
+ - COMMENT ON FUNCTION
+ - GRANT EXECUTE ON FUNCTION
+ - REVOKE EXECUTE ON FUNCTION
+ - DROP
+Use the VARCHAR or VARGRAPHIC syntax specifying an explicit length as required.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the statement.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-101</code>
+		<message><![CDATA[THE STATEMENT IS TOO LONG OR TOO COMPLEX]]></message>
+		<explanation><![CDATA[DB2 cannot process the statement because it exceeds the system limits for length or complexity. Enabling parallelism will increase the complexity of the statement.]]></explanation>
+		<systemAction><![CDATA[DB2 cannot process the statement.]]></systemAction>
+		<programmersResponse><![CDATA[Divide the statement into shorter or less complex SQL statements.
+If the statement enables parallelism, try disabling parallelism. You may do this by using the DEGREE(1) bind option for static SQL, or by setting the CURRENT DEGREE special register to '1' for dynamic SQL.]]></programmersResponse>
+		<sqlState>54001</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-102</code>
+		<message><![CDATA[LITERAL STRING IS TOO LONG. STRING BEGINS string]]></message>
+		<explanation><![CDATA[The string constant beginning with string has a length greater than the maximum allowed length. Most strings have these limits:
+ - For a hexadecimal constant (X, GX, or UX), the number of hexadecimal digits must not exceed 32704.
+ - Any other character string constant must be short enough so that its UTF-8 representation requires no more than 32704 bytes.
+ - Any other graphic string constant must be short enough so that its UTF-8 representation requires no more than 32704 bytes.
+In some contexts, however, the limit is smaller; see the DB2 SQL Reference for the specific cases.
+For special registers, the allowable length depends on the particular special register. A string that exceeds the limit can be specified only through assignment from a host variable. If this release of DB2 increases the maximum allowed length of a string constant, then an attempt to exploit the new length before using the New Function Mode produces this SQL return code.
+Two consecutive string delimiters are used to represent one string delimiter within the character string, but these count as 2 bytes when calculating the lengths of character string constants.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[The requested function is not available interactively. If the error occurred in the context of an SQL statement embedded in an application program, the desired result can be achieved by assigning the long string to a host variable, and substituting that variable for the string literal in the SQL statement.]]></programmersResponse>
+		<sqlState>54002</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-103</code>
+		<message><![CDATA[literal IS AN INVALID NUMERIC LITERAL]]></message>
+		<explanation><![CDATA[The indicated 'literal' begins with a digit, but is not a valid integer, decimal, or float literal.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the invalid literal.]]></programmersResponse>
+		<sqlState>42604</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-104</code>
+		<message><![CDATA[ILLEGAL SYMBOL &quot;token&quot;. SOME SYMBOLS THAT MIGHT BE LEGAL ARE: token-list]]></message>
+		<explanation><![CDATA[A syntax error was detected where the symbol &quot;token&quot; occurs in the SQL statement. The list of symbols that might be legal shows some alternate symbols that could possibly be correct at that point, if the preceding part of the statement is entirely correct.
+However, the preceding part of the statement might be incorrect. For example, if an important keyword is omitted, DB2 detects the error later, and not always immediately after the point where the keyword should appear. The list of alternate symbols are only suggestions. Some of those symbols might not even be legal for statements to be executed by DB2. Those symbols are possibly correct for statements sent to other database management systems.
+This SQL code will also be issued if the RELEASE TO SAVEPOINT statement is specified without a savepoint name.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the statement and execute it again.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-105</code>
+		<message><![CDATA[INVALID STRING]]></message>
+		<explanation><![CDATA[The statement contains an invalid string. It is neither a character string nor a graphic string.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Specify the correct format of the string. Check for a graphic string, paired delimiters, the character G or N, and an even number of bytes within the string.]]></programmersResponse>
+		<sqlState>42604</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-107</code>
+		<message><![CDATA[THE NAME name IS TOO LONG. MAXIMUM ALLOWABLE SIZE IS size]]></message>
+		<explanation><![CDATA[The name is too long. The maximum permissible length for names of that type is indicated by size. For each type of name, the DB2 SQL Reference lists the maximum allowed length.  If this release of DB2 increases the maximum allowed length of a name, then an attempt to exploit the new length before using the New Function Mode produces this SQL return code.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be processed.]]></systemAction>
+		<programmersResponse><![CDATA[Choose a shorter name for the object.]]></programmersResponse>
+		<sqlState>42622</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-108</code>
+		<message><![CDATA[THE NAME name IS QUALIFIED INCORRECTLY]]></message>
+		<explanation><![CDATA[The name name is improperly qualified. A target name on the RENAME statement may not have a qualifier.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Remove the qualifier and reissue the statement.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-109</code>
+		<message><![CDATA[clause CLAUSE IS NOT PERMITTED]]></message>
+		<explanation><![CDATA[The indicated clause is not permitted in the context in which it appears in this SQL statement for the following reasons:
+ - A subselect cannot have an INTO clause.
+ - A CREATE VIEW statement cannot have INTO, ORDER BY, or FOR UPDATE clauses.
+ - An embedded SELECT statement cannot have ORDER BY or FOR UPDATE clauses
+ - SELECT statements used in cursor declarations cannot have an INTO clause.
+ - A RAISE_ERROR function can only be used as a select list item if it is cast to some data type using the CAST specification.
+ - DESCRIBE INPUT statement can not have USING clause.
+ - QUERYNO cannot be specified as part of an EXPLAIN statement when the EXPLAIN statement contains an 'explainable-sql-statement'.
+ - The table being updated in a POSITIONED UPDATE statement cannot be assigned a correlation name.
+ - INPUT SEQUENCE cannot be specified if the table-spec is not included in a select-statement that contains an INSERT statement.
+ - A SET DATA TYPE clause cannot be specified on ALTER TABLE for an identity column.
+If the clause is part of a CREATE INDEX, CREATE TABLE, CREATE TABLESPACE or ALTER TABLESPACE statement, see the appropriate section of the SQL Reference for a description of the valid use of clauses for the statement.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the SQL statement.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-110</code>
+		<message><![CDATA[INVALID HEXADECIMAL LITERAL BEGINNING string]]></message>
+		<explanation><![CDATA[The string constant that begins with the specified string is invalid because it has at least one of the following errors:
+ - the string constant contains one or more characters that are not valid hexadecimal digits
+ - the string constant does not have an even number of digits
+ - for a UX or GX string constant, the number of digits is not a multiple of 4]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the invalid string constant.]]></programmersResponse>
+		<sqlState>42606</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-111</code>
+		<message><![CDATA[AN AGGREGATE FUNCTION DOES NOT INCLUDE A COLUMN NAME]]></message>
+		<explanation><![CDATA[The specification of an aggregate function (for example: AVG, MAX, MIN, or SUM) was invalid because such functions must include a column name in the operand. In a trigger definition, a transition variable specification does not qualify as a column name for this purpose.
+This message is still issued with Version 8 prior to New Function Mode. ]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[A column name must be specified as an operand to the function. Refer to Chapter 3 of DB2 SQL Reference for information about the proper usage of aggregate functions.]]></programmersResponse>
+		<sqlState></sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-112</code>
+		<message><![CDATA[THE OPERAND OF A AGGREGATE FUNCTION INCLUDES AN AGGREGATE FUNCTION OR A SCALAR FULLSELECT]]></message>
+		<explanation><![CDATA[The operand of an aggregate function can be either an expression or DISTINCT followed by an expression. The operand cannot be another aggregate function or a scalar fullselect.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the function specification. Refer to Chapter 3 of DB2 SQL Reference for information about the proper usage of aggregate functions.]]></programmersResponse>
+		<sqlState>42607</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-113</code>
+		<message><![CDATA[INVALID CHARACTER FOUND IN: string, REASON CODE nnn]]></message>
+		<explanation><![CDATA[The string contains an invalid character. It can be an SQL ordinary identifier name, a host variable name, or a DBCS comment.
+For SBCS SQL ordinary identifiers, names of buffer pools, databases, plans, and storage groups must contain only uppercase alphabetic or national characters and numerics when CHARSET is KATAKANA; the first character must be alphabetic or national.
+In some cases, the name of an SQL procedure can contain an underscore character. Please see the DB2 SQL Reference for more information.
+The following reason codes apply to SBCS identifiers:
+ 000 An invalid character was found in the SBCS identifier (including the case in which a DBCS identifier was used where only an SBCS identifier is allowed.)
+The following reason codes apply to DBCS identifiers or comments:
+ 101 An odd number of bytes exists between the shift-out and the shift-in character.
+ 102 Either a shift-in or shift-out character is missing.
+ 103 DBCS blanks X'4040' are not allowed.
+ 104 There are no characters between the shift-out and the shift-in characters.
+ 105 Shift-out cannot be the first byte of the DBCS character between the shift-out and the shift-in characters.]]></explanation>
+		<systemAction><![CDATA[Processing is terminated.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the name.]]></programmersResponse>
+		<sqlState>42602</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-114</code>
+		<message><![CDATA[THE LOCATION NAME location DOES NOT MATCH THE CURRENT SERVER]]></message>
+		<explanation><![CDATA[A 3-part SQL procedure name was provided for one of the following SQL statements:
+ - ASSOCIATE LOCATORS
+ - CALL
+ - DESCRIBE PROCEDURE
+The first part of the SQL procedure name, which specifies the location where the stored procedure resides, did not match the value of the SQL CURRENT SERVER special register.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Take one of these actions to resolve the mismatch:
+ - Change the location qualifier to match the CURRENT SERVER special register.
+ - Issue an SQL CONNECT to the location where the stored procedure resides before issuing the SQL statement. Ensure that the SQL CALL statement is issued before the ASSOCIATE LOCATORS or DESCRIBE PROCEDURE.
+ - Bind the package containing the 3-part SQL procedure name with the BIND option DBPROTOCOL(DRDA). With this option, DB2 implicitly uses the DRDA protocol for remote access to the stored procedure.
+ - Correct the statements so that the exact syntax used to specify the procedure name on the CALL statement be the same as that on the ASSOCIATE LOCATOR and/or DESCRIBE PROCEDURE. If an unqualified name is used to CALL the procedure, the 1-part name must also be used on the other statements. If the CALL statement is made with a 3-part name, and the current server is the same as the location in the 3-part name, the ASSOCIATE LOCATOR or DESCRIBE procedure can omit the location.]]></programmersResponse>
+		<sqlState>42961</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-115</code>
+		<message><![CDATA[A PREDICATE IS INVALID BECAUSE THE COMPARISON OPERATOR operator IS FOLLOWED BY A PARENTHESIZED LIST OR BY ANY OR ALL WITHOUT A SUBQUERY]]></message>
+		<explanation><![CDATA[A simple comparison like '&gt;' must not be followed by a list of items. ANY and ALL comparisons must be followed by a subselect, rather than an expression or a list of items.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the SQL statement. Refer to Chapter 5 of DB2 SQL Reference for information about the syntax of SQL statements.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-117</code>
+		<message><![CDATA[THE NUMBER OF VALUES ASSIGNED IS NOT THE SAME AS THE NUMBER OF SPECIFIED OR IMPLIED COLUMNS]]></message>
+		<explanation><![CDATA[The number of insert values in the value list of the INSERT statement is not the same as the number of object columns specified. Alternatively, the number of values on the right side of an assignment in a SET assignment statement or the SET clause of an UPDATE statement does not match the number of columns on the left side.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed. No data was inserted into the object table.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the statement to specify one and only one value for each of the specified object columns.]]></programmersResponse>
+		<sqlState>42802</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-118</code>
+		<message><![CDATA[THE OBJECT TABLE OR VIEW OF THE DELETE OR UPDATE STATEMENT IS ALSO IDENTIFIED IN A FROM CLAUSE]]></message>
+		<explanation><![CDATA[The table or view specified as the object of a DELETE or UPDATE statement also appears in the FROM clause of a subselect within the statement.
+The table or view that is the object of a UPDATE or DELETE cannot also be used to supply the values to be inserted or to qualify the rows to be updated or deleted.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed. No data was updated or deleted.]]></systemAction>
+		<programmersResponse><![CDATA[The implied function is not supported by DB2. It may be possible to obtain the desired result by creating a temporary copy of the object table or view and addressing the subselect to that copy. Refer to Chapter 5 of DB2 SQL Reference for information about the syntax of SQL statements.]]></programmersResponse>
+		<sqlState>42902</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-119</code>
+		<message><![CDATA[A COLUMN IDENTIFIED IN A HAVING CLAUSE IS NOT INCLUDED IN THE GROUP BY CLAUSE]]></message>
+		<explanation><![CDATA[A column identified in a HAVING clause (possibly within a scalar function) does not appear in the GROUP BY clause. Columns specified in a HAVING clause must appear within aggregate functions or also be specified in the GROUP BY clause.
+Grouping expressions can be used in a search condition in a HAVING clause. A grouping expression specifies only one value for each group. A grouping expression specified in this context must exactly match a grouping expression specified in the GROUP BY clause, except that blanks are not significant.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Refer to Chapter 4 of DB2 SQL Reference for information about the proper usage of HAVING and GROUP BY clauses.]]></programmersResponse>
+		<sqlState>42803</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-120</code>
+		<message><![CDATA[AN AGGREGATE FUNCTION IS NOT VALID IN THE CONTEXT IN WHICH IT WAS INVOKED]]></message>
+		<explanation><![CDATA[An aggregate function or a user-defined function that is sourced on an aggregate function is not permitted in a SET clause, VALUES clause, SET host-variable statement, SET transition-variable statement, assignment statement, or as the expression of a RETURN statement. An aggregate function or a user-defined function that is sourced on an aggregate function is allowed in a WHERE clause only if the WHERE clause appears within a subquery of a HAVING clause.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[The implied function is not supported by DB2. Refer to Chapter 4 of DB2 SQL Reference for information about restrictions on operands that can be specified within a WHERE clause, SET clause, VALUES clause, SET host-variable statement, SET transition-variable statement, assignment statement, or as the expression of a RETURN statement.]]></programmersResponse>
+		<sqlState>42903</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-121</code>
+		<message><![CDATA[THE COLUMN name IS IDENTIFIED MORE THAN ONCE IN THE INSERT OR UPDATE OR SET TRANSITION VARIABLE STATEMENT]]></message>
+		<explanation><![CDATA[The same column 'name' is specified more than once, either in the list of object columns of an INSERT statement, in the SET clause of an UPDATE statement, or in a SET transition variable statement.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed. No data was inserted or updated in the object table.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the syntax of the statement so that each column name is specified only once.]]></programmersResponse>
+		<sqlState>42701</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-122</code>
+		<message><![CDATA[A SELECT STATEMENT WITH NO GROUP BY CLAUSE CONTAINS A COLUMN NAME AND AN AGGREGATE FUNCTION IN THE SELECT CLAUSE OR A COLUMN NAME IS CONTAINED IN THE SELECT CLAUSE BUT NOT IN THE GROUP BY CLAUSE]]></message>
+		<explanation><![CDATA[The SELECT statement contains one of these errors:
+ - The statement contains a column name and a aggregate function in the SELECT clause, but no GROUP BY clause.
+ - A column name is contained in the SELECT clause (possibly within a scalar function) but not in the GROUP BY clause. Grouping expressions can be used in a SELECT list. A grouping expression specifies only one value for each group.  A grouping expression that is specified in this context must exactly match a grouping expression that is specified in the GROUP BY clause, except that blanks are not significant.
+   Attention: A HAVING clause specified without a GROUP BY clause implies a GROUP BY with no columns. Thus, no column names are allowed in the SELECT clause.
+ - A sort-key-expression was specified in the ORDER BY clause, the result table contains grouped data, but the select-clause and ORDER BY clause contain a mixture of grouped data and non-grouped data. Grouping expressions can be used in a sort-key-expression of an ORDER BY clause. A grouping expression specifies only one value for each group. A grouping expression that is specified in this context must exactly match a grouping expression that is specified in the GROUP BY clause, except that blanks are not significant.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[You can correct the statement by:
+ - including the columns in the GROUP BY clause that are in the SELECT clause, or
+ - removing the columns from the SELECT clause.
+Refer to Chapter 4 of DB2 SQL Reference for information about the use of GROUP BY clauses in SQL statements.]]></programmersResponse>
+		<sqlState>42803</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-123</code>
+		<message><![CDATA[THE PARAMETER IN POSITION n IN THE FUNCTION name MUST BE A CONSTANT OR KEYWORD]]></message>
+		<explanation><![CDATA[The parameter in position n in the function name is not a constant when it is required to be a constant or a keyword when it is required to be a keyword.]]></explanation>
+		<systemAction><![CDATA[The statement could not be processed.]]></systemAction>
+		<programmersResponse><![CDATA[Action: Ensure that each argument of the function conforms to the definition of the corresponding parameter.]]></programmersResponse>
+		<sqlState>42601</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-125</code>
+		<message><![CDATA[AN INTEGER IN THE ORDER BY CLAUSE DOES NOT IDENTIFY A COLUMN OF THE RESULT]]></message>
+		<explanation><![CDATA[The ORDER BY clause in the statement contains a column number that is either less than one, or greater than the number of columns of the result table (the number of items in the SELECT clause).]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[Correct the syntax of the ORDER BY clause such that each column identifier properly denotes a column of the result table.]]></programmersResponse>
+		<sqlState>42805</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-126</code>
+		<message><![CDATA[THE SELECT STATEMENT CONTAINS BOTH AN UPDATE CLAUSE AND AN ORDER BY CLAUSE]]></message>
+		<explanation><![CDATA[The SELECT statement in the declaration for a cursor contains both an UPDATE clause and an ORDER BY clause. Unless you use a scrollable cursor, an ORDER BY clause cannot be specified in the declaration for a cursor that is to be used for UPDATE.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be processed. The cursor remains undefined in the application program.]]></systemAction>
+		<programmersResponse><![CDATA[The implied function is not supported by DB2. A cursor that is to be used for update cannot be defined to fetch the rows of the object table in a specific order.
+Refer to Chapter 4 of DB2 SQL Reference for information about restrictions on the declarations for cursors to be used for update.]]></programmersResponse>
+		<sqlState>42829</sqlState>
+	</ReturnCodes>
+	<ReturnCodes>
+		<code>-127</code>
+		<message><![CDATA[DISTINCT IS SPECIFIED MORE THAN ONCE IN A SUBSELECT]]></message>
+		<explanation><![CDATA[The DISTINCT qualifier can be used only once in a SELECT statement or a subselect.
+NOTE: This message is still issued with Version 8 prior to New Function Mode.]]></explanation>
+		<systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+		<programmersResponse><![CDATA[The implied function is not supported by DB2. Refer to Chapter 4 of DB2 SQL Reference for information about restriction on the use of hte DISTINCT qualifier.]]></programmersResponse>
+		<sqlState>42905</sqlState>
+	</ReturnCodes>
+	
+	
+	<ReturnCodes>
+        <code>-128</code>
+        <message><![CDATA[INVALID USE OF NULL IN A PREDICATE]]></message>
+        <explanation><![CDATA[The use of NULL in the search condition does not conform to the rules of SQL syntax.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[The implied function is not supported by DB2. Refer to Chapter 2 of DB2 SQL Reference for information about the proper use of the NULL operand.]]></programmersResponse>
+        <sqlState>42601</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-129</code>
+        <message><![CDATA[THE STATEMENT CONTAINS TOO MANY TABLE NAMES]]></message>
+        <explanation><![CDATA[A subselect (including all subqueries) can have a maximum of 225 references to table names.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Break the SQL statement into two or more simpler statements with less than 225 table references in each. The count will include the number of base table occurrences from each table or view on the FROM list. Refer to Chapter 4 of DB2 SQL Reference for the definition of a subselect.]]></programmersResponse>
+        <sqlState>54004</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-130</code>
+        <message><![CDATA[THE ESCAPE CLAUSE CONSISTS OF MORE THAN ONE CHARACTER, OR THE STRING PATTERN CONTAINS AN INVALID OCCURRENCE OF THE ESCAPE CHARACTER]]></message>
+        <explanation><![CDATA[The ESCAPE character must be a single character, either SBCS or DBCS as appropriate. For 'column-name LIKE pattern', the ESCAPE character can only appear in the character string if it is followed by itself, %, or _ (underscore). The Escape Clause cannot be specified if the column name at the left of the LIKE or NOT LIKE has the MIXED subtype.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the string pattern, or choose a different ESCAPE character and change the pattern accordingly, or eliminate the use of the Escape Clause on the LIKE or NOT LIKE predicate where the column name to the left has the MIXED subtype.]]></programmersResponse>
+        <sqlState>22019 if other than invalid ESCAPE pattern. 22025 if invalid ESCAPE pattern.</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-131</code>
+        <message><![CDATA[STATEMENT WITH LIKE PREDICATE HAS INCOMPATIBLE DATA TYPES]]></message>
+        <explanation><![CDATA[If the column name at the left of LIKE or NOT LIKE is of type character, the expression at the right and the ESCAPE character must be of type character. If the column name is of type graphic, the expression at the right and the ESCAPE character must be of type graphic.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Check the data type of every operand.]]></programmersResponse>
+        <sqlState>42818</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-132</code>
+        <message><![CDATA[AN OPERAND OF value IS NOT VALID]]></message>
+        <explanation><![CDATA[The operation value can be the LIKE predicate, the ESCAPE clause, the LOCATE scalar function, or the POSSTR scalar function. The operand or argument of value was not valid for one of the following reasons:
+ - The match-expression operand of a LIKE or NOT LIKE predicate must be a string expression.
+ - The pattern-expression operand of the LIKE or NOT LIKE predicate, or search-string argument of the LOCATE or POSSTR function must be a string expression that can be specified by any one of the following:
+    * A constant
+    * A special register
+    * A host variable (including a LOB locator variable)
+    * A scalar function whose arguments are any of the above (though nested function invocations cannot be used)
+    * A CAST specification whose arguments are any of the above
+    * An expression that concatenates (using CONCAT or ||) any of the above
+ - The source-string argument of the LOCATE or POSSTR function must be a string expression that can be specified by any of the following:
+    * A constant
+    * A special register
+    * A host variable (including a LOB locator variable)
+    * A scalar function whose arguments are any of the above (though nested function invocations cannot be used)
+    * A CAST specification whose arguments are any of the above
+    * A column name
+    * An expression that concatenates (using CONCAT or ||) any of the above
+ - The escape-expression operand of the LIKE or NOT LIKE predicate must be a string expression that can be specified by any of the following:
+    * A constant
+    * A host variable (including a LOB locator variable)
+    * A scalar function whose arguments are any of the above (though nested function invocations cannot be used)
+    * A CAST specification whose arguments are any of the above
+See the DB2 SQL Reference for the rules of what can be specified in each context.
+A LIKE predicate, ESCAPE clause, LOCATE scalar function or POSSTR scalar function cannot be used with DATE, TIME, or TIMESTAMP.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be processed.]]></systemAction>
+        <programmersResponse><![CDATA[Check and correct the syntax of the LIKE predicate, or LOCATE or POSSTR scalar function.]]></programmersResponse>
+        <sqlState>42824</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-133</code>
+        <message><![CDATA[AN AGGREGATE FUNCTION IN A SUBQUERY OF A HAVING CLAUSE IS INVALID BECAUSE ALL COLUMN REFERENCES IN ITS ARGUMENT ARE NOT CORRELATED TO THE GROUP BY RESULT THAT THE HAVING CLAUSE IS APPLIED TO]]></message>
+        <explanation><![CDATA[If an aggregate function has a correlated column reference, it must be correlated from within a HAVING clause to the GROUP BY result that the HAVING clause is applied to. All column references in the argument must satisfy this condition.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Refer to Chapter 4 of DB2 SQL Reference for information about restrictions on the syntax of the HAVING clause.]]></programmersResponse>
+        <sqlState>42906</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-134</code>
+        <message><![CDATA[IMPROPER USE OF LONG STRING COLUMN OR AN EXPRESSION THAT RESOLVES TO A LONG STRING name]]></message>
+        <explanation><![CDATA[The SQL statement references a long string, but DB2 does not allow the use of long strings in the context that was specified.]]></explanation>
+        <systemAction><![CDATA[DB2 cannot process the statement.
+Attention: The column-name might not be returned in the SQLCA, depending on the nature of the error and the syntax in which it occurred.]]></systemAction>
+        <programmersResponse><![CDATA[DB2 does not support the requested operation on a long string value. Refer to Chapter 2 of DB2 SQL Reference for information about restrictions on the specification and manipulation of long string values.]]></programmersResponse>
+        <sqlState>42907</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-136</code>
+        <message><![CDATA[SORT CANNOT BE EXECUTED BECAUSE THE SORT KEY LENGTH IS GREATER THAN 16000 BYTES]]></message>
+        <explanation><![CDATA[A sort key is derived from the list of columns specified following a DISTINCT qualifier, or in an ORDER BY or GROUP BY clause. If both a DISTINCT qualifier and an ORDER BY or GROUP BY clause are present, the sort key is derived from the combination of both lists of columns.
+The internal length of the sort key cannot exceed 16000 bytes. In attempting to process the SQL statement, the internal length of the sort key derived from the DISTINCT and ORDER BY (or GROUP BY) or the DISTINCT or ORDER BY (or GROUP BY) specifications was found to exceed that maximum limit.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[The statement must be modified such that the internal length of the sort key will not exceed the maximum limit. In general, this means that one or more column names must be deleted from the ORDER BY or GROUP BY clause, or the list following the DISTINCT qualifier.]]></programmersResponse>
+        <sqlState>54005</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-137</code>
+        <message><![CDATA[THE LENGTH RESULTING FROM operation IS GREATER THAN maximum-length]]></message>
+        <explanation><![CDATA[The length of the result of concatenation or a function exceeds the defined maximum. The operation that resulted in the error is operation.
+For concatenation, the length cannot exceed 32,764 (if character operands) or 16,382 (if graphic operands).
+For other functions, see DB2 SQL Reference for the maximum result length.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Ensure that the length of the result does not exceed the defined maximum.]]></programmersResponse>
+        <sqlState>54006</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-138</code>
+        <message><![CDATA[THE SECOND OR THIRD ARGUMENT OF THE SUBSTR FUNCTION IS OUT OF RANGE]]></message>
+        <explanation><![CDATA[One of the following conditions exists:
+ - The second argument of the SUBSTR function is less than 1 or greater than M.
+ - The third argument of the SUBSTR function is an integer constant 0 or an expression whose value is less than 0 or greater than M-N+1.
+M is the length of the first argument, if it is of fixed-length, or M is the maximum length of the first argument, if it is of varying-length. N is the value of the second argument.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Ensure that the second and third arguments of the SUBSTR function have legal values according the above rules.]]></programmersResponse>
+        <sqlState>22011</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-142</code>
+        <message><![CDATA[THE SQL STATEMENT IS NOT SUPPORTED]]></message>
+        <explanation><![CDATA[An SQL statement was detected that is not supported by the database. The statement might be valid for other IBM relational database products or it might be valid in another context. For example, statements such as VALUES and SIGNAL or RESIGNAL SQLSTATE can appear only in certain contexts, such as in a trigger body or in an SQL Procedure. The SQLCODE is also issued if a DB2 private protocol application uses SQL statements that were added after Version 7. DB2 limits the SQL statements that a DB2 private protocol application can use to Version 7 or earlier SQL statements. See Part 4 of DB2 Application Programming and SQL Guide for more information.
+Additionally, This SQL code will also be issued if a distributed private protocol application uses SQL statements that were implemented after Version 7. DB2 limits the SQL statements that a distributed private protocol application can use to Version 7 or lower SQL statements. Please see &quot;MOVING FROM DB2 PRIVATE PROTOCOL ACCESS TO DRDA ACCESS&quot; in DB2 Application Programming and SQL Guide for more information.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Change the syntax of the SQL statement or remove the statement from the program.]]></programmersResponse>
+        <sqlState>42612</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-144</code>
+        <message><![CDATA[INVALID SECTION NUMBER number]]></message>
+        <explanation><![CDATA[One of the following:
+ - The user attempted to execute an invalid section.
+ - This release of DB2 does not support the SQL statement.
+ - The section number in the call parameter list is one of these:
+    * Negative
+    * An invalid duplicate
+    * Greater than the maximum section number of the DBRM or package.]]></explanation>
+        <systemAction><![CDATA[The statement is not executed.]]></systemAction>
+        <programmersResponse><![CDATA[For case 1: If you are executing a package that was bound with SQLERROR(CONTINUE), determine whether the statement in question was bound as a valid section. You can use the following statements to query the DB2 catalog:
+<pre>       SELECT SQLERROR
+     FROM   SYSIBM.SYSPACKAGE
+     WHERE  COLLID    = collection-id AND
+     NAME      = package-id    AND
+     VERSION   = version-name;</pre>
+   If that query returns 'C', the package was bound with SQLERROR(CONTINUE).
+<pre>       SELECT STMTNO, TEXT
+     FROM   SYSIBM.SYSPACKSTMT
+     WHERE  COLLID    = collection-id AND
+     NAME      = package-id    AND
+     VERSION   = version-name  AND
+     SECTNO    = number        AND
+     BINDERROR = 'Y';</pre>
+If that query returns any rows, the section is invalid. Refer to the error messages issued during the bind to determine the cause. Correct any errors and bind the package again, using the REPLACE option.
+For case 2: If the DB2 system has fallen back to a previous release, determine whether there are any SQL statements with a section number of zero that are not supported by that release. You can use the following statements to query the DB2 catalog.
+When executing from a DBRM, use:
+<pre>       SELECT *
+     FROM   SYSIBM.SYSSTMT
+     WHERE  SECTNO = 0
+     ORDER BY NAME, PLNAME, STMTNO, SEQNO;</pre>
+When executing from a package, use:
+<pre>       SELECT *
+     FROM   SYSIBM.SYSPACKSTMT
+     WHERE  SECTNO = 0
+     ORDER BY COLLID, NAME, VERSION, STMTNO, SEQNO;</pre>
+For case 3: Examine the application to determine whether the call parameter list was changed in some way. In general, you should not attempt to change the output of the precompiler.]]></programmersResponse>
+        <sqlState>58003</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-147</code>
+        <message><![CDATA[ALTER FUNCTION function-name FAILED BECAUSE SOURCE FUNCTIONS CANNOT BE ALTERED]]></message>
+        <explanation><![CDATA[The function cannot be altered because it is a source function. Only external scalar functions, or external table functions can be altered. To change an existing source function, you must DROP the function and recreate it.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Change the statement to refer to a function that can be altered, or recreate the function by dropping it and then creating a new version of it.]]></programmersResponse>
+        <sqlState>42809</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-148</code>
+        <message><![CDATA[THE SOURCE TABLE source-name CANNOT BE RENAMED OR ALTERED]]></message>
+        <explanation><![CDATA[Possible cases:
+ 1. The RENAME statement cannot be used to rename a view, an active RLST table, or a table for which a synonym is defined.
+ 2. The ALTER statement cannot be used to alter the length of the column because the column is referenced in a referential integrity relation, a user exit (field procedure, edit procedure, valid procedure, stored procedure or user defined function), a global temporary table, or a table defined with data capture changes. If the table name specified in the alter is a view or if there exists a row in SYSVIEWDEP that has source-name as a base table name, then this ALTER statement will fail.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[For case:
+ 1.  Drop all views, inactivate the RLST table, or drop the synonym.
+ 2.  Avoid referential integrity relations, user exits, or global temporary tables.
+ 3.  Run REORG INDEX, REORG TABLESPACE, or REBUILD INDEX. If the index is partitioned, then run the utility on all the partitions. Reissue the statement.]]></programmersResponse>
+        <sqlState>42809</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-150</code>
+        <message><![CDATA[THE OBJECT OF THE INSERT, DELETE, OR UPDATE STATEMENT IS A VIEW, YSTEM-MAINTAINED MATERIALIZED QUERY TABLE, OR TRANSITION TABLE FOR WHICH THE REQUESTED OPERATION IS NOT PERMITTED]]></message>
+        <explanation><![CDATA[One of the following occurred:
+ - A transition table was named in an INSERT, UPDATE, or DELETE statement in a triggered action. Transition tables are read-only.
+ - The view named in the INSERT, UPDATE, or DELETE statement is defined in such a way that the requested insert, update, or delete operation cannot be performed upon it.
+   Inserts into a view are prohibited if:
+    * The view definition contains a join, a GROUP BY, or a HAVING clause.
+    * The SELECT clause in the view definition contains the DISTINCT qualifier, an arithmetic expression, a string expression, a built-in function, or a constant.
+    * Two or more columns of the view are derived from the same column.
+    * A base table of the view contains a column that does not have a default value and is not included in the view.
+   Updates to a view are prohibited if:
+    * The view definition contains a join, a GROUP BY, or a HAVING clause.
+    * The SELECT clause in the view definition contains the DISTINCT qualifier or a function.
+   Also, a given column in a view cannot be updated (that is, the values in that column cannot be updated) if the column is derived from an arithmetic expression, a constant, a column that is part of the key of a partitioned index, or a column of a catalog table that cannot be updated.
+   Deletes against a view are prohibited if:
+    * The view definition contains a join, a GROUP BY, or a HAVING clause.
+    * The SELECT clause in the view definition contains the DISTINCT qualifier or a built-in function.
+ - A system-maintained materialized query table was named in an INSERT, UPDATE, or DELETE statement. System-maintained materialized query tables are refreshed using the REFRESH TABLE statement.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. No data was inserted, updated, or deleted.]]></systemAction>
+        <programmersResponse><![CDATA[The requested function cannot be performed on the view. Refer to Chapter 5 of DB2 SQL Reference for further information regarding inserting, deleting, and updating views.
+If the error occurred on a CREATE TRIGGER statement, remove the INSERT, UPDATE, or DELETE reference to the transition table.
+If the table is a system-maintained materialized query table, the requested function cannot be performed on that table. Refer to the description of the REFRESH TABLE statement in Chapter 5 of .]]></programmersResponse>
+        <sqlState>42807</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-151</code>
+        <message><![CDATA[THE UPDATE STATEMENT IS INVALID BECAUSE THE CATALOG DESCRIPTION OF COLUMN column-name INDICATES THAT IT CANNOT BE UPDATED]]></message>
+        <explanation><![CDATA[The specified column cannot be updated for one of the following reasons:
+ - The values for columns occurring in the partitioning key of a partitioned table cannot be updated.
+ - The object table is a view and the specified column is defined (in the definition of the view) in such a way that it cannot be updated.
+ - The object table is a catalog table with no columns that can be updated.
+ - The object column is a ROWID column.
+ - The object column is defined with the AS IDENTITY and GENERATED ALWAYS attributes.
+ - The specified column of catalog tables cannot be updated because the column itself is not updatable.
+Individual columns in a view cannot be updated for one of the following reasons:
+ - The column is derived from an SQL function, an arithmetic expression, or a constant.
+ - The column is defined for a column of an underlying view that cannot be updated.
+ - The column is defined for a read-only view.
+ - The column is defined for a column that is in the partitioning key of a partitioned table.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. No data was updated in the object table or view.]]></systemAction>
+        <programmersResponse><![CDATA[The requested function is not supported by DB2. Refer to the description of the UPDATE statement in Chapter 5 of DB2 SQL Reference for information about restrictions on the ability to update ROWID columns, identity columns, and columns in partitioned tables and views.]]></programmersResponse>
+        <sqlState>42808</sqlState>
+    </ReturnCodes>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ReturnCodes>
+        <code>-152</code>
+        <message><![CDATA[THE DROP clause CLAUSE IN THE ALTER STATEMENT IS INVALID BECAUSE      constraint-name IS A constraint-type]]></message>
+        <explanation><![CDATA[The DROP clause of an ALTER TABLE statement tried to drop a
+   constraint that does not match the constraint-type in the DROP clause.
+   clause must identify an appropriate constraint-type as follows:
+
+
+   REFERENTIALCONSTRAINT The identified constraint must be a referential
+             constraint.
+
+   CHECK CONSTRAINTThe identified constraint must be a check constraint.
+
+   PRIMARY KEYCONSTRAINT The identified constraint must be a primary key
+             constraint.
+
+   UNIQUE KEYCONSTRAINT The identified constraint must be a unique key
+             constraint.]]></explanation>
+        <systemAction><![CDATA[The ALTER TABLE DROP statement cannot be executed. No
+   object was dropped.]]></systemAction>
+        <programmersResponse><![CDATA[Drop the existing object with the correct DROP
+   clause of the ALTER TABLE statement.]]></programmersResponse>
+        <sqlState>42809</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-153</code>
+        <message><![CDATA[THE STATEMENT IS INVALID BECAUSE THE VIEW OR TABLE DEFINITION DOES      NOT INCLUDE A UNIQUE NAME FOR EACH COLUMN]]></message>
+        <explanation><![CDATA[You must specify a list of column names if the result table
+ | of the fullselect that is specified in the CREATE VIEW, CREATE TABLE, or
+ | DECLARE GLOBAL TEMPORARY TABLE statement has duplicate column names or an
+ | unnamed column (a column from a constant, function, or expression).
+
+ |]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. The specified view or
+ | table was not created, or the declared temporary table was not declared.
+
+ |]]></systemAction>
+        <programmersResponse><![CDATA[Correct the statement by providing a list of names
+ | for the columns of the view or table. Refer to Chapter 5 of DB2 SQL
+ | Reference for information about the syntax of the CREATE VIEW statement,
+ | the CREATE TABLE statement, or the DECLARE GLOBAL TEMPORARY TABLE
+ | statement.]]></programmersResponse>
+        <sqlState>42908</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-154</code>
+        <message><![CDATA[THE STATEMENT FAILED BECAUSE VIEW OR TABLE DEFINITION IS NOT VALID]]></message>
+        <explanation><![CDATA[The view defined in the CREATE VIEW statement, the table
+ | defined in the CREATE TABLE statement, or the table declared in the
+ | DECLARE GLOBAL TEMPORARY TABLE statement is not valid because the view or
+ | table definition references a remote object.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. The specified object is
+   not defined.
+
+ |]]></systemAction>
+        <programmersResponse><![CDATA[Refer to Chapter 5 of DB2 SQL Reference for
+ | information about restrictions on the definitions for views, materialized
+ | query tables, or declared temporary tables.]]></programmersResponse>
+        <sqlState>42909</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-156</code>
+        <message><![CDATA[THE STATEMENT DOES NOT IDENTIFY A TABLE]]></message>
+        <explanation><![CDATA[The statements ALTER TABLE, DROP TABLE, LOCK TABLE, CREATE
+   INDEX, and CREATE TRIGGER apply only to tables. Indexes and triggers can
+   be defined only on tables.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. The specified view or
+   remote object was not altered, dropped, or locked, or the index or trigger
+   was not created.]]></systemAction>
+        <programmersResponse><![CDATA[Verify that the proper name was specified in the
+   statement.]]></programmersResponse>
+        <sqlState>42809</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-157</code>
+        <message><![CDATA[ONLY A TABLE NAME CAN BE SPECIFIED IN A FOREIGN KEY CLAUSE.      object-name IS NOT THE NAME OF A TABLE.]]></message>
+        <explanation><![CDATA[The indicated object was identified in a FOREIGN KEY clause
+   of a CREATE or ALTER TABLE statement. A FOREIGN KEY clause must identify a
+   table.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the statement to specify a table name in the
+   foreign key clause.]]></programmersResponse>
+        <sqlState>42810</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-158</code>
+        <message><![CDATA[THE NUMBER OF COLUMNS SPECIFIED FOR THE VIEW OR TABLE IS NOT THE |    SAME AS THE NUMBER OF COLUMNS SPECIFIED BY THE FULLSELECT, OR THE |    NUMBER OF COLUMNS SPECIFIED IN THE CORRELATION CLAUSE IN A FROM |    CLAUSE IS NOT THE SAME AS THE NUMBER OF COLUMNS IN THE |    CORRESPONDING TABLE, VIEW, TABLE EXPRESSION, OR TABLE FUNCTION]]></message>
+        <explanation><![CDATA[There are three potential reasons for this SQL code:
+
+
+  |     The number of column names that are specified for a view in a CREATE
+ |     VIEW statement must equal the number of elements that are specified in
+ |     the SELECT clauses of the following fullselect. These elements may be
+ |     column names, SQL functions, and expressions, for example.
+
+  |     The number of column names that are specified for a table in a CREATE
+ |     TABLE statement must equal the number of columns in the result table
+ |     of the following fullselect.
+
+  |     The number of column names that are specified in a correlation clause
+ |     must equal the number of columns in the corresponding table, view,
+ |     table expression or table function.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the syntax of the statement to specify a
+   column name for each column in the corresponding object (table, view,
+   etc.). Refer to Chapter 5 of DB2 SQL Reference for information about the
+   syntax of the statement.]]></programmersResponse>
+        <sqlState>42811</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-159</code>
+        <message><![CDATA[THE STATEMENT REFERENCES object-name WHICH IDENTIFIES AN |    object-type RATHER THAN AN expected-object-type]]></message>
+        <explanation><![CDATA[The object object-name was specified as part of a
+ | statement, and refers to an object of type object-type instead of the
+ | expected type expected-object-type. The type of the object that is
+ | provided with the statement must match the type that is identified by
+ | expected-object-type. For example, if the satement is DROP ALIAS TED.T1,
+ | then TED.T1 must be an alias name.
+
+ | If object-type or expected-object-type is TABLE, and object-type or
+ | expected-object-type is a particular type of table, then the type of table
+ | was not valid for the statement that was specified.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.
+
+ |]]></systemAction>
+        <programmersResponse><![CDATA[Change the statement to match the type of object
+ | that is identified by expected-object-type. For example:
+
+
+  |     An ALTER VIEW statement must reference an existing view.
+
+  |     A COMMENT ON ALIAS statement must specify the name of an alias, and
+ |     not the name of a table or view.
+
+  |     A COMMENT ON TABLE statement must reference an existing table or view.
+
+  |     A CREATE INDEX statement with the UNIQUE keyword must specify a table
+ |     that is not a materialized query table.
+
+  |     A CREATE TRIGGER statement must specify a table in the ON clause that
+ |     is not a materialized query table. That is, a trigger cannot be
+ |     defined for a materialized query table.
+
+  |     A DROP ALIAS statement must specify the name of an alias, and not the
+ |     name of a table or view.
+
+  |     A DROP TABLE statement must reference an existing table. If an alias
+ |     is specified, then the table that the alias refers to is dropped. Use
+ |     the DROP ALIAS statement to drop the alias.
+
+  |     A DROP VIEW statement must reference an existing view.
+
+  |     A REFRESH TABLE statement must refer to a materialized query table.]]></programmersResponse>
+        <sqlState>42809</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-160</code>
+        <message><![CDATA[THE WITH CHECK OPTION CANNOT BE USED FOR THE SPECIFIED VIEW]]></message>
+        <explanation><![CDATA[The WITH CHECK OPTION does not apply to a view definition
+   under either of the following circumstances:
+
+
+        The view is read-only (for example, the view definition includes
+       DISTINCT GROUP BY, or JOIN).
+
+        The view definition includes a subquery.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. The specified view was
+   not created.]]></systemAction>
+        <programmersResponse><![CDATA[Refer to Chapter 5 of DB2 SQL Reference for rules
+   regarding use of the WITH CHECK OPTION in view definitions.]]></programmersResponse>
+        <sqlState>42813</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-161</code>
+        <message><![CDATA[THE INSERT OR UPDATE IS NOT ALLOWED BECAUSE A RESULTING ROW DOES      NOT SATISFY THE VIEW DEFINITION]]></message>
+        <explanation><![CDATA[The WITH CHECK OPTION applies to the view that is the object
+   of the INSERT or UPDATE statement. Consequently, all attempts to insert or
+   update rows in that view are checked to ensure that the results will
+   conform to the view definition.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. No inserts or updates
+   were performed, and the contents of the object view (and underlying base
+   table) remain unchanged.]]></systemAction>
+        <programmersResponse><![CDATA[Examine the view definition to determine why the
+   requested INSERT or UPDATE was rejected. Note that this may be a
+   data-dependent condition.]]></programmersResponse>
+        <sqlState>44000</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-164</code>
+        <message><![CDATA[auth-id1 DOES NOT HAVE THE PRIVILEGE TO CREATE A VIEW WITH      QUALIFICATION authorization-ID]]></message>
+        <explanation><![CDATA[The authorization ID auth-id1 does not have the authority
+   necessary to create views with qualifiers other than its own authorization
+   ID.  Specifically, the attempt to create a view with qualifier
+   authorization-ID is rejected.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed. The specified view was
+   not created.]]></systemAction>
+        <programmersResponse><![CDATA[Do not attempt to create views with other than your
+   own ID as a qualifier.  Only an authorization ID that holds 'SYSADM' or
+   'DBADM' authority can create views for other authorization IDs. The DBADM
+   privilege should be granted on any of the databases that contain at least
+   one of the tables on which this CREATE VIEW is based.]]></programmersResponse>
+        <sqlState>42502</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-170</code>
+        <message><![CDATA[THE NUMBER OF ARGUMENTS SPECIFIED FOR function-name IS INVALID]]></message>
+        <explanation><![CDATA[An SQL statement includes the scalar function
+   'function-name' with either too many or too few arguments.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the statement. Refer to Chapter 3 of DB2 SQL
+   Reference for information about the number of arguments required by the
+   scalar function 'function-name'.]]></programmersResponse>
+        <sqlState>42605</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-171</code>
+        <message><![CDATA[THE DATA TYPE, LENGTH, OR VALUE OF ARGUMENT nn OF function-name IS      INVALID]]></message>
+        <explanation><![CDATA[Either the data type, the length or the value of argument nn
+   of scalar function function-name is incorrect.
+
+   If the encoding scheme is EBCDIC or ASCII, a possible reason for this
+   error is that a character argument was specified for a built-in function
+   that expects a graphic argument, or a graphic argument was specified for a
+   built-in function that expects a character argument. The UNICODE encoding
+   scheme does support the mixing of character and graphic arguments.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the statement. Refer to Chapter 3 of DB2 SQL
+   Reference for rules for each argument of the scalar function
+   function-name.]]></programmersResponse>
+        <sqlState>42815</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-173</code>
+        <message><![CDATA[UR IS SPECIFIED ON THE WITH CLAUSE BUT THE CURSOR IS NOT READ-ONLY]]></message>
+        <explanation><![CDATA[The cursor is not a read-only cursor. WITH UR can be
+   specified only if DB2 can determine that the cursor is read-only.]]></explanation>
+        <systemAction><![CDATA[Statement execution fails.]]></systemAction>
+        <programmersResponse><![CDATA[If the cursor is intended to be read-only but is
+   ambiguous, add the FOR FETCH ONLY clause. If the cursor is updateable,
+   change the isolation level specified on the WITH clause.]]></programmersResponse>
+        <sqlState>42801</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-180</code>
+        <message><![CDATA[THE DATE, TIME, OR TIMESTAMP VALUE value IS INVALID]]></message>
+        <explanation><![CDATA[The length or string representation of a DATE, TIME, or
+   TIMESTAMP value does not conform to any valid format.
+
+   The value can contain one of the following:
+
+
+        For a host variable, the position number of the input host variable.
+       If the position number cannot be determined, a blank is displayed.
+
+        For a character string constant, the character string constant. The
+       maximum length that is displayed is the length of SQLERRM.
+
+        For a character column, the column name. If the column is a VIEW
+       column and it has a corresponding base column, the VIEW column name is
+       displayed. If the column is a VIEW column but it does not have a
+       corresponding base column, a string of '*N' is displayed.
+
+
+
+   Otherwise, value is a string of '*N'.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the program to ensure the specified value
+   conforms to the syntax of DATE, TIME, and TIMESTAMP. Refer to Chapter 2 of
+   DB2 SQL Reference for a list of valid DATE and TIME formats.]]></programmersResponse>
+        <sqlState>22007</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-181</code>
+        <message><![CDATA[THE STRING REPRESENTATION OF A DATETIME VALUE IS NOT A VALID      DATETIME VALUE]]></message>
+        <explanation><![CDATA[The string representation of a datetime is not in the
+   acceptable range or is not in the correct format. The proper ranges for
+   datetime values are as follows:
+
+
+
+
+
+
+
+
+
+&nbsp;Table&nbsp;2.&nbsp;Range&nbsp;of&nbsp;datetime&nbsp;values&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Datetime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;Numeric&nbsp;Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Years&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;0001&nbsp;to&nbsp;9999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Months&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;1&nbsp;to&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;April,&nbsp;June,&nbsp;September,&nbsp;&nbsp;&nbsp;&nbsp;November&nbsp;(months&nbsp;4,&nbsp;6,&nbsp;9,&nbsp;&nbsp;11)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;1&nbsp;to&nbsp;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;February&nbsp;(month&nbsp;2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;1&nbsp;to&nbsp;28&nbsp;(Leap&nbsp;year&nbsp;1&nbsp;&nbsp;&nbsp;to&nbsp;29)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;January,&nbsp;March,&nbsp;May,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;July,&nbsp;August,&nbsp;October,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;December&nbsp;(months&nbsp;1,&nbsp;3,&nbsp;5,&nbsp;&nbsp;7,&nbsp;8,&nbsp;10,&nbsp;12)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;1&nbsp;to&nbsp;31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;0&nbsp;to&nbsp;24&nbsp;(If&nbsp;hour&nbsp;is&nbsp;&nbsp;&nbsp;&nbsp;24,&nbsp;other&nbsp;parts&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time&nbsp;values&nbsp;are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zeroes.&nbsp;If&nbsp;hour&nbsp;is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USA,&nbsp;maximum&nbsp;hour&nbsp;is&nbsp;&nbsp;&nbsp;12.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;0&nbsp;to&nbsp;59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Seconds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;0&nbsp;to&nbsp;59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;Microseconds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;0&nbsp;to&nbsp;999999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Check whether the value is within the valid range
+   and is in the proper format.  Refer to Chapter 2 of DB2 SQL Reference for
+   information on string data formats.]]></programmersResponse>
+        <sqlState>22007</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-182</code>
+        <message><![CDATA[AN ARITHMETIC EXPRESSION WITH A DATETIME VALUE IS INVALID]]></message>
+        <explanation><![CDATA[The specified arithmetic expression contains an improperly
+   used datetime value or labeled duration.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the indicated arithmetic expression.]]></programmersResponse>
+        <sqlState>42816</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-183</code>
+        <message><![CDATA[AN ARITHMETIC OPERATION ON A DATE OR TIMESTAMP HAS A RESULT THAT IS      NOT WITHIN THE VALID RANGE OF DATES]]></message>
+        <explanation><![CDATA[The result of an arithmetic operation is a date or timestamp
+   that is not within the valid range of dates which are between 0001-01-01
+   and 9999-12-31.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Examine the SQL statement to see if the cause of the
+   problem can be determined. The problem may be data-dependent, in which
+   case it will be necessary to examine the data that was processed at the
+   time the error occurred.]]></programmersResponse>
+        <sqlState>22008</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-184</code>
+        <message><![CDATA[AN ARITHMETIC EXPRESSION WITH A DATETIME VALUE CONTAINS A PARAMETER      MARKER]]></message>
+        <explanation><![CDATA[The specified arithmetic expression contains a parameter
+   marker improperly used with a datetime value.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the indicated arithmetic expression.]]></programmersResponse>
+        <sqlState>42610</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-185</code>
+        <message><![CDATA[THE LOCAL FORMAT OPTION HAS BEEN USED WITH A DATE OR TIME AND NO      LOCAL EXIT HAS BEEN INSTALLED]]></message>
+        <explanation><![CDATA[The local format option has been used with a datetime value
+   and no datetime exit has been installed. This may occur if the LOCAL DATE
+   LENGTH or LOCAL TIME LENGTH on the Installation Application Programming
+   Defaults Panel indicated that an exit for datetime was supplied, but in
+   fact the exit supplied by DB2 was not replaced. This may also occur if the
+   datetime exit was replaced and the corresponding LOCAL DATE LENGTH or
+   LOCAL TIME LENGTH on the Installation Application Programming Defaults
+   Panel was not set to a nonzero value.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Contact the system programmer about installation of
+   the date or time exit.]]></programmersResponse>
+        <sqlState>57008</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-186</code>
+        <message><![CDATA[THE LOCAL DATE LENGTH OR LOCAL TIME LENGTH HAS BEEN INCREASED AND      EXECUTING PROGRAM RELIES ON THE OLD LENGTH]]></message>
+        <explanation><![CDATA[The local format option has been used with a datetime value
+   and DB2 has discovered that the datetime exit routine has been changed to
+   produce a longer local format.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[If the statement receiving this error is embedded in
+   the application program, then a REBIND command must be issued for the
+   application plan. If the statement was dynamic SQL, then the statement can
+   be reentered.]]></programmersResponse>
+        <sqlState>22505</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-187</code>
+        <message><![CDATA[A REFERENCE TO A CURRENT DATETIME SPECIAL REGISTER IS INVALID |    BECAUSE THE MVS TOD CLOCK IS BAD OR THE MVS PARMTZ IS OUT OF RANGE]]></message>
+        <explanation><![CDATA[DB2 has encountered an invalid time-of-day (TOD) clock. The
+   user referenced one of the special registers: CURRENT DATE, CURRENT TIME,
+   CURRENT TIMESTAMP, or CURRENT TIMEZONE. If the user referenced CURRENT
+   TIMEZONE, the MVS parameter PARMTZ was out of range.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[For CURRENT TIMEZONE, check that the MVS parameter
+   PARMTZ is between -24 and +24 hours. For the other CURRENT special
+   registers, check that the MVS TOD clock has been set correctly.]]></programmersResponse>
+        <sqlState>22506</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-188</code>
+        <message><![CDATA[THE STRING REPRESENTATION OF A NAME IS INVALID]]></message>
+        <explanation><![CDATA[The host variable referenced in the DESCRIBE statement does
+   not contain a valid string representation of a name. One of the following
+   error conditions has occurred.
+
+
+        The first byte of the variable is a period or a blank.
+
+        The number of identifiers is greater than 3.
+
+        An identifier is too long.
+
+        A period not contained in a delimited identifier is followed by a
+       period or a blank.
+
+        A delimited identifier is followed by a character other than a period
+       or a blank.
+
+        A delimited identifier is not terminated by a quotation mark.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[Correct the value of the host variable so that it is
+   a valid string representation of a name.]]></programmersResponse>
+        <sqlState>22503</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-189</code>
+        <message><![CDATA[CCSID ccsid IS INVALID]]></message>
+        <explanation><![CDATA[To determine the subtype of an input host variable or result
+   column, the SYSSTRINGS catalog table was accessed with the specified CCSID
+   and:
+
+
+        The CCSID is not a value of either INCCSID or OUTCCSID, or
+
+        The TRANSTYPE column classifies the CCSID as GRAPHIC rather than
+       CHARACTER, or
+
+        A graphic CCSID has not been specified on your system.
+
+  |     The CCSID is outside the acceptable range of values. The CCSID must be
+ |     between 1 and 65533, inclusive, or the value 65535.
+
+  |     A DBCS CCSID was specified when casting to CHAR, VARCHAR or CLOB.
+
+  |     An SBCS or mixed CCSID, or 65535 was specified when casting to a
+ |     graphic data type.
+
+  |     CCSID 65535, which is valid only for data with the FOR BIT DATA
+ |     attribute, was specified when casting to a CLOB.
+
+
+
+   This error can occur when SYSSTRINGS is accessed with a pair of CCSIDs to
+   determine if a translation is defined for the pair. In this case, the
+   error is the inconsistency between the data type of a string and the
+   TRANSTYPE classification of its CCSID (one is GRAPHIC and the other is
+   CHARACTER).
+
+   This error can also occur when a CCSID specified in DECP does not exist as
+   a value in the INCCSID or OUTCCSID columns of SYSSTRINGS.
+
+   Another reason this error can occur is that you may be using one of the
+   graphic built-in functions but a graphic CCSID was not specified during
+   system installation.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be bound or executed.]]></systemAction>
+        <programmersResponse><![CDATA[Ensure that the CCSSID is valid and consistent with
+   the data type of the string. If a valid CCSID is not listed in a built-in
+   row of SYSSTRINGS, it can be defined by inserting a user-provided row. If
+   a valid CCSID is misclassified in a user-provided row, that row can be
+   updated to correct the mistake. Refer to the appendices of DB2
+   Installation Guide for more information on CCSIDs and to DB2 SQL Reference
+   for more information on the SYSSTRINGS catalog table.
+
+   If a graphic CCSID had not been specified at system installation, update
+   your DECP to include a graphic CCSID and recycle your DB2.]]></programmersResponse>
+        <sqlState>22522</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-190</code>
+        <message><![CDATA[THE ATTRIBUTES SPECIFIED FOR THE COLUMN column-name ARE NOT |    COMPATIBLE WITH THE EXISTING COLUMN DEFINITION]]></message>
+        <explanation><![CDATA[The attributes that were specified in the ALTER COLUMN
+ | clause for the column column-name of the table table-name in an ALTER
+ | TABLE statement are not compatible with the attributes of the existing
+ | column. The error was returned for one of the follwing reasons:
+
+
+  |     If a SET DATA TYPE clause is specified, the existing column is not
+ |     compatible with the new data type that was specified, or is of a data
+ |     type that cannot be changed. The ALTER TABLE ALTER COLUMN SET DATA
+ |     TYPE statement only allows changing columns of data type character or
+ |     numeric.
+  |     If a RESTART, SET GENERATED, SET INCREMENT BY, SET MINVALUE, SET NO
+ |     MINVALUE, SET MAXVALUE, SET NO MAXVALUE, SET CYCLE, SET NO CYCLE, SET
+ |     CACHE, SET NO CACHE, SET ORDER, or SET NO ORDER clause is specified,
+ |     the existing column is not defined as an identity column. These
+ |     clauses can only be specified for a column that is defined as an
+ |     identity column.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.
+
+ |]]></systemAction>
+        <programmersResponse><![CDATA[Make the attributes that are specified in the
+ | statement compatible with the existing column definition, remove the
+ | attribute specification, or specify a different column name.]]></programmersResponse>
+        <sqlState>42837</sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code>-191</code>
+        <message><![CDATA[A STRING CANNOT BE USED BECAUSE IT IS INVALID MIXED DATA]]></message>
+        <explanation><![CDATA[The operation required the translation of a mixed data
+   character string to a different coded character set. The string could not
+   be translated because it does not conform to the rules for well-formed
+   mixed data. For example, the string contains EBCDIC shift codes that are
+   not properly paired.]]></explanation>
+        <systemAction><![CDATA[The statement cannot be executed.]]></systemAction>
+        <programmersResponse><![CDATA[If the string contains the intended information, the
+   description of the column or host variable should be changed from MIXED
+   DATA to BIT or SBCS DATA. If the description of the column or host
+   variable is correct, the string is the problem and it must be changed to
+   conform to the rules for well-formed mixed data. For more information
+   about well-formed MIXED DATA refer to Chapter 2 of DB2 SQL Reference.]]></programmersResponse>
+        <sqlState>22504</sqlState>
+    </ReturnCodes>
+	
+	
+	
+    <ReturnCodes>
+        <code></code>
+        <message><![CDATA[]]>
+        </message>
+        <explanation><![CDATA[]]>
+        </explanation>
+        <systemAction><![CDATA[]]>
+        </systemAction>
+        <programmersResponse><![CDATA[]]>
+        </programmersResponse>
+        <sqlState></sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code></code>
+        <message><![CDATA[]]>
+        </message>
+        <explanation><![CDATA[]]>
+        </explanation>
+        <systemAction><![CDATA[]]>
+        </systemAction>
+        <programmersResponse><![CDATA[]]>
+        </programmersResponse>
+        <sqlState></sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code></code>
+        <message><![CDATA[]]>
+        </message>
+        <explanation><![CDATA[]]>
+        </explanation>
+        <systemAction><![CDATA[]]>
+        </systemAction>
+        <programmersResponse><![CDATA[]]>
+        </programmersResponse>
+        <sqlState></sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code></code>
+        <message><![CDATA[]]>
+        </message>
+        <explanation><![CDATA[]]>
+        </explanation>
+        <systemAction><![CDATA[]]>
+        </systemAction>
+        <programmersResponse><![CDATA[]]>
+        </programmersResponse>
+        <sqlState></sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code></code>
+        <message><![CDATA[]]>
+        </message>
+        <explanation><![CDATA[]]>
+        </explanation>
+        <systemAction><![CDATA[]]>
+        </systemAction>
+        <programmersResponse><![CDATA[]]>
+        </programmersResponse>
+        <sqlState></sqlState>
+    </ReturnCodes>
+    <ReturnCodes>
+        <code></code>
+        <message><![CDATA[]]>
+        </message>
+        <explanation><![CDATA[]]>
+        </explanation>
+        <systemAction><![CDATA[]]>
+        </systemAction>
+        <programmersResponse><![CDATA[]]>
+        </programmersResponse>
+        <sqlState></sqlState>
+    </ReturnCodes>
+
+
+
+
+
+	<ReturnCodes>
+		<code></code>
+		<message></message>
+		<explanation></explanation>
+		<systemAction></systemAction>
+		<programmersResponse></programmersResponse>
+		<sqlState></sqlState>
+	</ReturnCodes>
+
+</EdtHelp>

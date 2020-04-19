@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edtSettings version="2.0" part="favourites">
+  <favourites>
+    <folder name="DB">
+      <query lastrun="">
+        <name><![CDATA[Alle Tabellen]]></name>
+        <sql><![CDATA[select * from develop.TZ0880]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[Alle Spalten]]></name>
+        <sql><![CDATA[select * from develop.TZ0920]]></sql>
+      </query>
+      <query lastrun="">
+        <name><![CDATA[Alle Key-Spalten]]></name>
+        <sql><![CDATA[select * from develop.TZ0920 where PART_OF_KEY = 'Y']]></sql>
+      </query>
+    </folder>
+    <folder name="demo">
+      <query lastrun="">
+        <name><![CDATA[abc]]></name>
+        <sql><![CDATA[SELECT * FROM altersfreigabe
+where beschreibung like '%0']]></sql>
+      </query>
+    </folder>
+    <folder name="kino">
+      <query lastrun="">
+        <name><![CDATA[(freie) Karten]]></name>
+        <sql><![CDATA[SELECT v.vorstellung_id AS 'Vorstellung',
+       v.termin AS 'Termin',
+       s.bezeichnung AS 'Saal',
+       f.name AS 'Film',
+       COUNT( DISTINCT p.`platz_id`) AS 'Sitze',
+       COUNT( DISTINCT p.`platz_id`) - COUNT(DISTINCT r.`reservierung_id`) - COUNT(DISTINCT k1.`karte_id`) AS 'freie Sitze',
+       COUNT(DISTINCT k1.`karte_id`) AS 'verkaufte Karten ohne Reservierung',
+       COUNT(DISTINCT r.`reservierung_id`) AS 'Reservierungen',
+       COUNT(DISTINCT k2.`karte_id`) AS 'davon verkauft'
+FROM `karte` k2
+RIGHT JOIN (`karte` k1
+    RIGHT JOIN (`reservierung` r
+        RIGHT JOIN (`vorstellung` v, `film` f, `saal` s)
+        ON r.`fk_vorstellung_id` = v.`vorstellung_id`)
+    ON k1.`fk_vorstellung_id` = v.`vorstellung_id` AND k1.`fk_reservierung_id` IS NULL)
+ON k2.`fk_vorstellung_id` = v.`vorstellung_id` AND k2.`fk_reservierung_id` IS NOT NULL
+LEFT JOIN `platz` p
+ON p.`fk_saal_id` = s.`saal_id`
+WHERE v.`fk_saal_id` = s.`saal_id`
+  AND v.`fk_film_id` = f.`film_id`
+GROUP BY v.`vorstellung_id`]]></sql>
+      </query>
+    </folder>
+    <folder name="mecke" />
+    <folder name="sonst">
+      <query lastrun="">
+        <name><![CDATA[SELECT * FROM kunde]]></name>
+        <sql><![CDATA[SELECT * FROM kunde]]></sql>
+      </query>
+    </folder>
+    <folder name="web" />
+    <folder name="zoll" />
+  </favourites>
+</edtSettings>
+
